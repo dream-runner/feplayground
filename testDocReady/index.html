@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js_common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+			<div id="wrapper">
+				<div>789</div>
+			</div>	
+	</body>
+	<script>
+		$(function(){
+			var old = $('#wrapper').html();
+			alert(old);
+			$('#wrapper').html('<div id="container"></div>');
+			$('#container').html(old);
+		});
+		/*$(function(){
+			var old = $('body').html();
+			alert(old);
+			$('body').html('<div id="container"></div>');
+			$('#container').html(old);
+//			$('#container').html('123<script>document.onready=function(){alert("window loaded")}<\/script>');
+		});*/
+	</script>
+</html>

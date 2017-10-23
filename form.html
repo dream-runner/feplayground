@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8;" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+ 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+ 		<!--[if lte IE 9]>
+ 			<script type="text/javascript" src="js/respond.min.js" ></script>
+ 		<![endif]-->
+ 		<input type="text" name="" id="" value="" />
+ 		<script src="js_common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="http://127.0.0.1/h5cs3/index.php" method="post">
+				<select name="num[]" multiple="multiple" size="3">
+					<option value="1">aa</option>
+					<option value="3">bb</option>
+					<option value="5">cc</option>
+				</select>
+				<!--<input type="checkbox" name="name[]" value="tom" />tom
+				<input type="checkbox" name="name[]" value="martin" />martin-->
+				<input type="submit" value="submit" />
+			</form>
+			<input onblur="handleBlur();">
+			<input type="range" name="" id="" value="" />
+			<div onclick="handleClick();">其实我是个按钮</div>
+			<script>
+				var handleBlur = function(){
+					console.log('blur triggered!')
+				}
+				var handleClick = function(){
+					console.log('Click triggered!')
+				}
+				$('form').on('submit',function(){
+					'<iframe src="http://udn.yyuap.com" width="100" height="100%"></iframe>'
+				})
+			</script>
+	</body>
+</html>

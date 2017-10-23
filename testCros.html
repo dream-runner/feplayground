@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js_common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		jQuery.support.cors = true;
+			$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/h5cs3/index.php?_"+(+new Date()),
+				async:true,
+				success:function(data){
+					alert(40)
+				}
+			});
+		</script>
+	</body>
+</html>

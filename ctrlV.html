@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js_common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="textarea" contenteditable="true"
+			 name="" rows="" cols="" style="background: lightblue;width: 500px;height: 500px;"></div>
+		<canvas id="pic_preview" width="500" height="500"></canvas>
+		<img src="" alt="" />
+		<script type="text/javascript">
+		yyBaseurl = 'http://123.103.9.204:91'
+			$('#textarea').on('paste',function(e){debugger;
+				e = e.originalEvent;
+		        var items = getPasteImage(e);
+		        if(items){
+                    var len = items.length,
+                        file;
+                    while (len--){
+                        file = items[len];
+                        if(file.getAsFile) file = file.getAsFile();
+                        if(file && file.size > 0) {
+//                          sendAndInsertFile(file);
+							var reader = new FileReader(); 
+								reader.readAsDataURL(file); 
+							    reader.onload = function(e){ alert(res)
+							      var res = this.result; 
+							      $("img").attr("src", res); 
+							    } 
+                        }
+                    }
+                }
+		        function getPasteImage(e){
+		       			 return e.clipboardData && e.clipboardData.items && e.clipboardData.items.length == 1 && /^image\//.test(e.clipboardData.items[0].type) ? e.clipboardData.items:null;
+				}
+			})	
+		</script>
+		<form action="">
+			<input id="file_input" onchange="filechange" type="file" />
+		</form>
+		<script type="text/javascript">
+			function filechange(){
+				var file = document.getElementById('file_input').val();
+				var reader = new FileReader();
+				reader.readAsDataURL(file); 
+			    reader.onload = function(e){ alert(res)
+			      var res = this.result; 
+			      $("img").attr("src", res); 
+			    }	
+			}
+		</script>
+	</body>
+</html>

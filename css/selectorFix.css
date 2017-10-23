@@ -1,0 +1,41 @@
+.symbol{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+	border: 1px solid #000;
+	padding: 50px;
+	border-radius: 150px;
+	after:&nbsp;
+	before:&nbsp;
+}
+.symbol:after,.symbol:before{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+}
+.symbol:before{
+	border-top: 1px solid #000;
+	left: 50%;
+	margin-left: -25px;
+	width: 50px;
+}
+.symbol:after{
+	left: 50%;
+	margin-left: -1px;
+	border-left: 1px solid #000;
+	margin-top: -25px;
+	height: 50px;
+}
+ul li:last-child{
+	background: #BF97EF;
+}
+ul li:nth-child(2){
+	background: #47D9C9;
+}
+label{background: #468847;padding: 5px;}
+:checked+label{
+	padding: 20px;
+	background: #0000FF;
+}

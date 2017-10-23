@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="js_common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<script type="text/javascript">
+function selectText() {
+    if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById('selectable'));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('selectable'));
+        window.getSelection().addRange(range);
+    }
+}
+</script>
+<span id="selectable" contenteditable="true">点击后选中<br />点击后选中<br />点击后选中<br />点击后选中<br /></span> 
+<input type="button" onclick="$('#selectable').focus()" value="点我" />
+</body>
+</html>

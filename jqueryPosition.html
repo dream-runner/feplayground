@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js_common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.font{
+				font-size:40px;
+				font-family: fantasy;
+			}
+			.font.yahei{
+				color: #f00;
+				font-family: "microsoft yahei";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tag1">111</div>
+		<div class="tag2">222</div>
+		<div class="tag3">333</div>
+		<div class="tag3">444</div>
+		<div class="font">
+			路漫漫其修远兮hehehe
+		</div>
+		<button>button</button>
+		<script type="text/javascript">
+			$('button').on('click',function(){
+				
+				$('.font').toggleClass('yahei')
+			})
+		</script>
+	</body>
+</html>

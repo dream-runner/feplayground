@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js_common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js_common/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="$('form').validate()" method="post">
+			<input type="text" name="ness" id="ness" value="" />
+			<input type="submit" value="submit"/>
+		</form>
+		<script type="text/javascript">
+			$('form').validate({
+				rules:{
+					'ness':{'required':true}
+				}
+			})
+		</script>
+	</body>
+</html>

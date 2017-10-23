@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>alert("this is written in the head")</script>
+		<script src="js/jspriority.js"></script>
+		<script>$(function(){alert("this will execute after document is ready")})</script>
+		<script>window.onload=function(){alert("this will execute after window is loaded")}</script>
+	</head>
+	<body>
+		<script>alert("this is written in the body")</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js_common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<button>send a msg to the frame</button>
+		<iframe frameborder="0" height="2000px" src="http://127.0.0.1:8020/h5cs3/XDMTarget.html" width="" height=""></iframe>
+		<script type="text/javascript">
+			$('button').on('click',function(){
+				var frameWindow = $('iframe')[0].contentWindow;
+				frameWindow.postMessage("shit","http://127.0.0.1"); 
+			})
+			function loadFrame(){
+				var frameNaturalHeight = 100+frames[0].window.document.documentElement.getElementsByTagName('body')[0].offsetHeight,
+				    frameNaturalWidth = frames[0].window.document.documentElement.clientWidth;
+				//$('.frame-wrapper iframe').css('min-height',(50+frameNaturalHeight)+'px');
+				//$('iframe').height(frameNaturalHeight);
+					}
+		</script>
+	</body>
+</html>
