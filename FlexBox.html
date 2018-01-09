@@ -27,20 +27,26 @@ ITEM 属性
 		<style type="text/css">
 			.container{
 				display:flex;
-				display: -webkit-flex;
+				/*display: -webkit-flex;
 				flex-direction: row;
 				flex-wrap: wrap;
-				justify-content: flex-end;
+				justify-content: flex-end;*/
 				background: #a0f437;
 				height: 500px;
 				width: 700px;
 			}
 			.item{
-				flex:1;
+				width: 400px;
+				/*flex:1;
 				flex-basis: 0;
-				padding: 50px;
+				padding: 50px;*/
 				background: #c54688;
-				border: 2px solid #fff;
+				align-self: flex-start;
+				/*border: 2px solid #fff;*/
+			}
+			.item:last-child{
+				flex-shrink: 2;
+				-webkit-flex-shrink: 2;
 			}
 			/*.item:nth-child(1){
 				flex:1;
@@ -55,22 +61,34 @@ ITEM 属性
 			.wrapper2{
 				display: flex;
 			}
+			
+			#flex{display:-webkit-flex;display:flex;width:400px;margin:0;padding:0;list-style:none;}
+#flex div{width:200px;}
+#flex div:nth-child(1){background:#888;}
+#flex div:nth-child(2){background:#ccc;}
+#flex div:nth-child(3){-webkit-flex-shrink:3;flex-shrink:3;background:#aaa;}
 		</style>
 	</head>
 	<body>
+		<!--<div id="flex">
+		    <div>a</div>
+		    <div>b</div>
+		    <div>c</div>
+		</ul>-->
 		<div class="outer-container">
 			<div class="container">
 					<div class="item">item1</div>
+					<div class="item">item1</div>
 					<div class="item">item2</div>
-					<div class="item">item3</div>
+					<!--<div class="item">item3</div>
 					<div class="item">item4</div>
 					<div class="item">item5</div>
 					<div class="item">item6</div>
-					<div class="item">item7</div>
+					<div class="item">item7</div>-->
 				<!--<div class="item">item8</div>-->
 			</div>
 		</div>
-		<div class="Grid">
+		<!--<div class="Grid">
 			  <div class="Grid-cell u-1of4">affsdf</div>
 			  <div class="Grid-cell">fasdfsad</div>
 			  <div class="Grid-cell u-1of3">afdsfsad</div>
@@ -100,6 +118,6 @@ ITEM 属性
 			.Grid-cell.u-1of4 {
 			  flex: 0 0 25%;
 			}
-		</style>
+		</style>-->
 	</body>
 </html>

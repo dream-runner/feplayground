@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>
+			this is the inner page
+		</h1>
+		<script type="text/javascript">
+			window.onload =function(){
+				window.top.postMessage('this is a message from inner html','*')
+			}
+			window.onmessage = function(e){
+				alert(e.data)
+			}
+		</script>
+	</body>
+</html>

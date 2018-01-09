@@ -11,7 +11,7 @@ $arr = [1,2,3];
 //header('Access-Control-Allow-Origin: *');
 
 //echo time();
-echo '<script>window.domain=127.0.0.1</script>';
+//echo '<script>window.domain=127.0.0.1</script>';
 echo (json_encode($arr));
 //echo 'callback('.json_encode($arr).')'
 //echo $_REQUEST['callback'].'('.json_encode($arr).')';

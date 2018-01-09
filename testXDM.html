@@ -3,24 +3,61 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script src="js_common/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js_common/jquery-1.7.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="js_common/jquery-1.8.0.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="js_common/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js_common/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js_common/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>-->
 		<style type="text/css">
+			[data-flag="1"]{
+				color: red;
+			}
 		</style>
 	</head>
 	<body>
+		<button>button</button>
+		<input type="checkbox" />
+		<a href="javascript:void(0)">label to button</a>
+		<table border="" cellspacing="" cellpadding="">
+			<colgroup>
+				<col  width="200" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td>11</td>
+					<td>22</td>
+				</tr>
+			</tbody>
+		</table>
+		
 		<button>send a msg to the frame</button>
 		<iframe frameborder="0" height="2000px" src="http://127.0.0.1:8020/h5cs3/XDMTarget.html" width="" height=""></iframe>
 		<script type="text/javascript">
-			$('button').on('click',function(){
-				var frameWindow = $('iframe')[0].contentWindow;
-				frameWindow.postMessage("shit","http://127.0.0.1"); 
+			$('a').on('click',function(){
+//				alert($(this).prop('data-flag'))
+//				$btn = $('button');
+				$btn = $('input');
+//				$btn.attr('disabled')?$btn.removeAttr('disabled'):$btn.attr('disabled','disabled')
+				$btn.attr('checked')?$btn.removeAttr('checked'):$btn.attr('checked','checked')
+//				$btn.prop('disabled')?$btn.removeProp('disabled'):$btn.prop('disabled','disabled')
+//				$btn.prop('checked')?$btn.removeProp('checked'):$btn.prop('checked','checked')
 			})
-			function loadFrame(){
-				var frameNaturalHeight = 100+frames[0].window.document.documentElement.getElementsByTagName('body')[0].offsetHeight,
-				    frameNaturalWidth = frames[0].window.document.documentElement.clientWidth;
-				//$('.frame-wrapper iframe').css('min-height',(50+frameNaturalHeight)+'px');
-				//$('iframe').height(frameNaturalHeight);
-					}
+				try{
+					$('col').prop({width:'auto'})
+				}catch(e){
+					console.log(">>",e)
+				}
+//			$('button').on('click',function(){
+//				var frameWindow = $('iframe')[0].contentWindow;
+//				frameWindow.postMessage("shit","http://127.0.0.1"); 
+//			})
+//			function loadFrame(){
+//				var frameNaturalHeight = 100+frames[0].window.document.documentElement.getElementsByTagName('body')[0].offsetHeight,
+//				    frameNaturalWidth = frames[0].window.document.documentElement.clientWidth;
+//				//$('.frame-wrapper iframe').css('min-height',(50+frameNaturalHeight)+'px');
+//				//$('iframe').height(frameNaturalHeight);
+//					}
 		</script>
 	</body>
 </html>

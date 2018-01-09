@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Title</title>
+    <script src="js_common/jquery-1.12.4.js"></script>
+</head>
+<body>
+<form action="">
+    <input type="file" name="file">
+</form>
+<button>upload</button>
+<script>
+    function dataURItoBlob(base64Data) {
+        var byteString;
+        if (base64Data.split(',')[0].indexOf('base64') >= 0)
+            byteString = atob(base64Data.split(',')[1]);
+        else
+            byteString = unescape(base64Data.split(',')[1]);
+        var mimeString = base64Data.split(',')[0].split(':')[1].split(';')[0];
+        var ia = new Uint8Array(byteString.length);
+        for (var i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([ia], {type:mimeString});
+    }
+//    第二步，构建formData
+
+//    这里需要借助html5的canvas
+
+
+</script>
+<script>
+    $('button').click(function(){
+        var param = new FormData(document.forms[0]);
+
+		function dataURItoBlob(base64Data) {
+		        var byteString;
+		        if (base64Data.split(',')[0].indexOf('base64') >= 0)
+		            byteString = atob(base64Data.split(',')[1]);
+		        else
+		            byteString = unescape(base64Data.split(',')[1]);
+		        var mimeString = base64Data.split(',')[0].split(':')[1].split(';')[0];
+		        var ia = new Uint8Array(byteString.length);
+		        for (var i = 0; i < byteString.length; i++) {
+		            ia[i] = byteString.charCodeAt(i);
+		        }
+		        return new Blob([ia], {type:mimeString});
+		    }
+        var imageBase64 = ''
+
+//      var blob = dataURItoBlob(imageBase64); // 上一步中的函数
+//        param.append("file", blob, 'image.png');
+
+
+        param.append('key','5d568865-340a-48ed-b226-673dfba1af6a_1510904161287_4444');
+
+        param.append('policy','eyJleHBpcmF0aW9uIjoiMjAxNy0xMS0xOFQwNzozNTo1My40MzJaIiwiY29uZGl0aW9ucyI6W1siY29udGVudC1sZW5ndGgtcmFuZ2UiLDAsMTA0ODU3NjAwMF0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCI1ZDU2ODg2NS0zNDBhLTQ4ZWQtYjIyNi02NzNkZmJhMWFmNmEiXV19');
+        param.append('OSSAccessKeyId','XK14iURPnhimo37l');
+        param.append('success_action_status','200');
+        param.append('signature','D2pdH+ruSd3XqVEhxbNHuntPt54=');
+        $.ajax({
+            url:'http://ncc-ys-prod-oss-xingjjc.oss-cn-beijing.aliyuncs.com/',
+            type:'post',
+            processData: false, // 必须
+            contentType: 'multipart/form-data', // 必须
+            data:param,
+            success:function(data){
+	alert()
+            }
+        })
+    })
+</script>
+
+</body>
+
+</html>

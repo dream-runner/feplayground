@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.onmessage = function(e){
+				alert(e.data)
+			}
+			window.onload = function(){
+				frames[0].postMessage('this is a message from outer html','*')
+			}
+		</script>
+		<iframe 'innerframe' src="http://byip.com/feplayground/postmessage/inner.html" width="" height=""></iframe>
+	</body>
+</html>
