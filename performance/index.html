@@ -1,0 +1,34 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-08-24 08:45:49
+ * @LastEditTime: 2021-08-28 13:52:18
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/performance/index.html
+-->
+<html>
+  <head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<button id="createBtn">增加节点</button>
+<script> 
+function runSomething() {
+  let fn = `try {} catch (e) {}`.repeat(10000)
+  // window.a = 
+  // new Function(fn)()
+  eval(fn)
+  // let i = 1000
+  // while (i--) {
+  //   try {
+      
+  //   } catch (error) {
+      
+  //   }
+  // }
+  // !!function () { var str = `${Math.random().toString(36).repeat(1000)}`}()
+}  
+document.getElementById('createBtn').addEventListener('click', runSomething);
+</script>
+</body>
+</html>

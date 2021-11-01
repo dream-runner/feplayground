@@ -1,0 +1,46 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-05-11 20:10:47
+ * @LastEditTime: 2021-05-11 20:30:03
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iweb_cloudform/Users/yangjz0/workspace/phpweb/performance/performanceOpt.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    function randomHexColor() {
+        return "#" + ("0000" + (Math.random() * 0x1000000 << 0).toString(16)).substr(-6);
+    }
+    var root = document.getElementById("root");
+    setTimeout(function () {
+        function loop(n) {
+            var k = 0;
+            console.log(n);
+            for (var i = 0; i < 100; i++) {
+                k += new Date - 0;
+                var el = document.createElement("div");
+                el.innerHTML = k;
+                root.appendChild(el);
+                el.style.cssText = `background:${randomHexColor()};height:40px`;
+            }
+            if (n) {
+                setTimeout(function () {
+                    loop(n - 1);
+                }, 40);
+            }
+        }
+        loop(100);
+    }, 1000);
+  window.onload = function() {
+    console.error('window onload')
+  }
+  </script>
+</body>
+</html>

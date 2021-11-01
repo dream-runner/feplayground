@@ -1,0 +1,41 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-06-07 15:34:47
+ * @LastEditTime: 2021-06-07 15:37:27
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iweb_cloudform/Users/yangjz0/workspace/phpweb/feplayground/pos-transform.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .root{
+      position: relative;
+      height: 100px;
+      border: 1px solid lightseagreen;
+      padding: 10px;
+    }
+    .son{
+      transform: translateX(200px);
+      border: 1px solid blueviolet;
+    }
+    .gran-son{
+      position: absolute;
+      left: 50px;
+      padding: 50px;
+      background: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="son">
+      <div class="gran-son"></div>
+    </div>
+  </div>
+</body>
+</html>
