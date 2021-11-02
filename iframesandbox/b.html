@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    this is page b
+  </h1>
+  <script>
+    document.domain = 'b.com'
+
+    // 不同域：allow-same-origin+(samesite,secure)
+    // 同域： allow-same-origin
+    document.body.style.backgroundColor="#f00"
+    // document.cookie='test=test;samesite=none;secure'
+    document.cookie='test=test'
+  </script>
+</body>
+</html>

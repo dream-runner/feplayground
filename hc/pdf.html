@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./alpha.js"></script>
+  <style>
+    *{
+      margin: 0;
+    }
+    .wrap{
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="toconvert" style="color: aqua;">
+    <div class="wrap">
+      <input type="text" value="shit" style="color: aqua;font-size: 20px;"/>
+    </div>
+  </div>
+  <script>
+    html2canvas(document.querySelector('#toconvert')).then(canvas => {
+      // debugger
+      // document.body.appendChild(canvas)
+    })
+  </script>
+</body>
+</html>

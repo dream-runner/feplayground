@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+		<style>
+			table{
+				border-collapse: collapse;
+				border:0;
+				table-layout: fixed;
+			}
+			td{
+				border: 1px solid #ccc;
+			}
+
+		</style>
+		<div class="outer"></div>
+		<script type="text/javascript">
+			function handleClick(){alert()}
+		</script>
+		<div class="wrapper" onclick="alert()">
+			<a href="http://www.baidu.com" >aaa</a>
+		</div>
+		
+		<script type="text/javascript">
+//			document.cookie="name=martin";
+//			alert(document.cookie);
+//			window.arr = []
+window.addEventListener('error',function(e){
+	e.stopPropagation();e.preventDefault()
+})
+try{
+//	alert(window.top.origin)	
+}catch(e){
+	
+}finally{
+	alert(111);
+}
+
+window.top.postMessage('sdfsafsa','*')
+		</script>
+	</body>
+
+</html>

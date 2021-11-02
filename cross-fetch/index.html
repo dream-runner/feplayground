@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    fetch(`https://sub.a.com/runtime-mobile/server/hash/`, {
+      method: 'POST',
+      body: JSON.stringify({}),
+      cridentials: 'include',
+      headers: {
+        'Content-type': 'application/json',
+        url: 'fdsfds'
+      }
+    }).then(res => {
+      alert(res)
+    })
+  </script>
+  <form action="../index.php">
+    <input type="text" name="anoy">
+    <button type="submit">submit</button>
+  </form>
+</body>
+</html>

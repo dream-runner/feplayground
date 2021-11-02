@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="50" height="50">
+
+    </canvas>
+    <canvas id="anotherCanvas" width="50" height="50">
+
+    </canvas>
+    <script>
+    var img = new Image,  
+    canvas = document.getElementById("myCanvas"),  
+    canvas_ = document.getElementById("anotherCanvas"),  
+    ctx_ = canvas_.getContext("2d"),
+    ctx = canvas.getContext("2d");
+    img.crossOrigin = "";  
+    img.src = "https://ncc-ys-prod-oss.oss-cn-beijing.aliyuncs.com//a2e6a30c-eb66-4d4b-bded-65b109d74f2e"; // insert image url here  
+    // img.src = "./img.png"; // insert image url here  
+  
+    
+    img.onload = function() {  
+        canvas.width = img.width;  
+        canvas.height = img.height;  
+        canvas_.width = img.width;  
+        canvas_.height = img.height;  
+        ctx.drawImage( img, 0, 0 ); 
+        ctx_.drawImage( canvas, 0, 0 ); 
+        localStorage.setItem( "savedImageData", canvas_.toDataURL("image/png") );  
+    }
+
+    
+    </script>
+    
+</body>
+</html>

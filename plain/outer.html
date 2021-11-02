@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<style>
+			table{
+				border-collapse: collapse;
+				border:0;
+				table-layout: fixed;
+			}
+			td{
+				border: 1px solid #ccc;
+			}
+
+		</style>
+		<div class="outer"></div>
+		<script type="text/javascript">
+			function handleClick(){alert()}
+		</script>
+		<div class="wrapper" onclick="alert()">
+			this is the outer page
+		</div>
+		<script type="text/javascript">
+//			window.onmessage = function(data){
+//				alert(data.origin)
+//			}
+		</script>
+		
+		<iframe src="http://byip.com/plain/parent.html " width="" height=""></iframe>
+	</body>
+
+</html>

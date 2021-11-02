@@ -1,0 +1,2327 @@
+{
+  "success": true,
+  "backMsg": "获取字段信息成功！",
+  "backData": {
+    "displayName": "我的主2",
+    "indexArray": [],
+    "interfaceList": ["bd.approvalFlow.ApprovalFlowItf", "common.base.Tenant", "bd.businessFlow.BusinessFlowItf", "common.base.Template", "common.base.LogicDelete", "ucfbase.ucfbaseItf.IAuditInfo", "ucfbase.ucfbaseItf.IYTenant"],
+    "metadataLevel": "2",
+    "tableName": "t_mymain2_a2ag7si9",
+    "businessObjectId": "",
+    "modifyTime": "2021-08-09 16:57:19:331",
+    "terms": [{
+      "code": "report",
+      "name": "报表实体",
+      "id": "ef3bd425-6672-4544-b282-c38282f716bd"
+    }],
+    "childEntity": [{
+      "cParentUri": "GT87268AT200.GT87268AT200.myMain2",
+      "displayName": "我的子2",
+      "indexArray": [],
+      "oriUri": "GT87268AT200.GT87268AT200.myMain2",
+      "interfaceList": ["common.base.Tenant", "bd.businessFlow.BusinessFlowItf", "common.base.Template", "common.base.LogicDelete", "ucfbase.ucfbaseItf.IAuditInfo", "ucfbase.ucfbaseItf.IYTenant"],
+      "metadataLevel": "2",
+      "childrenField": "myZi2List",
+      "parentDisplayName": "我的主2",
+      "tableName": "t_myzi2_a2ag7si9",
+      "multi": "0..n",
+      "businessObjectId": "",
+      "modifyTime": "2021-08-09 16:57:36:062",
+      "terms": [{
+        "code": "report",
+        "name": "报表实体",
+        "id": "ef3bd425-6672-4544-b282-c38282f716bd"
+      }],
+      "options": [{
+        "parent": null,
+        "modifyTime": "2019-12-06 11:26:25:916",
+        "createTime": "2019-12-06 11:26:25:916",
+        "displayName": "业务流",
+        "name": "businessFlow",
+        "_id": {
+          "$oid": "5e44b8c99f00b604ce88849e"
+        },
+        "id": "3feeb562-07a8-4f76-bd1f-222753279234",
+        "interface": [{
+          "id": "b49c8db2-a3a7-41c4-95f5-d22542b8e061",
+          "uri": "bd.businessFlow.BusinessFlowItf"
+        }],
+        "status": "1",
+        "childEnable": true
+      }, {
+        "parent": [{
+          "name": "基类",
+          "id": "5be01275-6bc3-491d-b5a1-b7040bb24a3c",
+          "uri": "ucfbase.entity.BizObject"
+        }],
+        "modifyTime": "2019-12-06 11:26:25:916",
+        "createTime": "2019-12-06 11:26:25:916",
+        "displayName": "基础可选项",
+        "name": "base",
+        "_id": {
+          "$oid": "5e815ea766279415761cfe58"
+        },
+        "id": "666eb562-06a8-4f23-bd1f-222753279123",
+        "interface": [{
+          "name": "逻辑删除",
+          "id": "bf3e1492-1609-4155-8af8-81d7bc756d3d",
+          "uri": "common.base.LogicDelete"
+        }, {
+          "name": "租户信息",
+          "id": "9b147d49-1ba6-4c0e-84cd-098a8ac1dcdf",
+          "uri": "common.base.Tenant"
+        }, {
+          "name": "租户信息",
+          "id": "ed80d4e6-896d-435d-89cc-3c33e488dbed",
+          "uri": "ucfbase.ucfbaseItf.IYTenant"
+        }, {
+          "name": "审计信息",
+          "id": "d7e946f3-f842-475c-99e5-ea2da921466e",
+          "uri": "ucfbase.ucfbaseItf.IAuditInfo"
+        }, {
+          "name": "模版接口",
+          "id": "bdcd5899-08e9-46df-8da3-ea4d275fec6d",
+          "uri": "common.base.Template"
+        }],
+        "status": "0"
+      }],
+      "id": "f438e8b4-c18f-4edf-b20b-4a899be0f6e4",
+      "mul_language_resid": {
+        "displayName": "C_YS_PF_METADATA_0000219623"
+      },
+      "modelType": "EntityAttrModel",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myZi2",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": "我的子2"
+        }
+      },
+      "ytenant_id": "a2ag7si9",
+      "metaComponentId": "5f7e2a21-6f5d-42bf-b195-2cef6299ea62",
+      "createTime": "2021-08-09 16:57:36:062",
+      "name": "myZi2",
+      "tenantId": "a2ag7si9",
+      "metaType": "Class",
+      "_id": {
+        "$oid": "6110ee006c2852002a5a4373"
+      },
+      "ownedAttribute": [{
+        "fieldName": "string_0",
+        "serialNumber": 1,
+        "nullable": true,
+        "displayName": "字段1sub",
+        "dataType": {
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.new1",
+        "mul_language": {
+          "zh_TW": {
+            "displayName": ""
+          },
+          "en_US": {
+            "displayName": ""
+          },
+          "zh_CN": {
+            "displayName": ""
+          }
+        },
+        "biztype": "text",
+        "hide": false,
+        "terms": [],
+        "isExtenal": true,
+        "name": "new1",
+        "metaType": "Property",
+        "id": "89dae52c-5785-4034-b028-a6ebac032cb5",
+        "precise": "2",
+        "newData": true,
+        "status": "4"
+      }, {
+        "fieldName": "string_1",
+        "serialNumber": 2,
+        "nullable": true,
+        "displayName": "字段2",
+        "dataType": {
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.new2",
+        "mul_language": {
+          "zh_TW": {
+            "displayName": ""
+          },
+          "en_US": {
+            "displayName": ""
+          },
+          "zh_CN": {
+            "displayName": ""
+          }
+        },
+        "biztype": "text",
+        "hide": false,
+        "terms": [],
+        "isExtenal": true,
+        "name": "new2",
+        "metaType": "Property",
+        "id": "48fa26c3-2361-4e5e-8b7b-7100ab85fcab",
+        "precise": "2",
+        "newData": true,
+        "status": "4"
+      }, {
+        "fieldName": "string_2",
+        "serialNumber": 3,
+        "nullable": true,
+        "displayName": "字段3",
+        "dataType": {
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.new3",
+        "mul_language": {
+          "zh_TW": {
+            "displayName": ""
+          },
+          "en_US": {
+            "displayName": ""
+          },
+          "zh_CN": {
+            "displayName": ""
+          }
+        },
+        "biztype": "text",
+        "hide": false,
+        "terms": [],
+        "isExtenal": true,
+        "name": "new3",
+        "metaType": "Property",
+        "id": "c224d9fe-918c-40b6-9ee2-48129c8dd476",
+        "precise": "2",
+        "newData": true,
+        "status": "4"
+      }, {
+        "fieldName": "string_3",
+        "serialNumber": 4,
+        "nullable": true,
+        "displayName": "字段4",
+        "dataType": {
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.new4",
+        "mul_language": {
+          "zh_TW": {
+            "displayName": ""
+          },
+          "en_US": {
+            "displayName": ""
+          },
+          "zh_CN": {
+            "displayName": ""
+          }
+        },
+        "biztype": "text",
+        "hide": false,
+        "terms": [],
+        "isExtenal": true,
+        "name": "new4",
+        "metaType": "Property",
+        "id": "7b422abd-a487-4e3b-83ed-495859605648",
+        "precise": "2",
+        "newData": true,
+        "status": "4"
+      }, {
+        "fieldName": "string_4",
+        "serialNumber": 5,
+        "nullable": true,
+        "displayName": "字段5",
+        "dataType": {
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.new5",
+        "mul_language": {
+          "zh_TW": {
+            "displayName": ""
+          },
+          "en_US": {
+            "displayName": ""
+          },
+          "zh_CN": {
+            "displayName": ""
+          }
+        },
+        "biztype": "text",
+        "hide": false,
+        "terms": [],
+        "isExtenal": true,
+        "name": "new5",
+        "metaType": "Property",
+        "id": "1507eb27-ab95-4ced-91a7-ffa5b7535e04",
+        "precise": "2",
+        "newData": true,
+        "status": "4"
+      }, {
+        "fieldName": "fidstr_0",
+        "serialNumber": 6,
+        "nullable": true,
+        "displayName": "我的主2",
+        "dataType": {
+          "name": "我的主2",
+          "metaType": "Class",
+          "id": "dd14fcbc-9245-4896-933b-c535a17c7695",
+          "uri": "GT87268AT200.GT87268AT200.myMain2"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "metadataLevel": "2",
+        "version": 1,
+        "uri": "GT87268AT200.GT87268AT200.myZi2.myMain2_id",
+        "biztype": "quote",
+        "hide": false,
+        "isExtenal": true,
+        "name": "myMain2_id",
+        "metaType": "Property",
+        "id": "1abe8b1f-d7b1-4dfb-a253-913178eed585",
+        "precise": "2",
+        "isFk": true,
+        "status": "4"
+      }, {
+        "fieldName": "dr",
+        "nullable": "true",
+        "displayName": "逻辑删除标记",
+        "uiHide": true,
+        "defaultValue": "0",
+        "dataType": {
+          "name": "短整数",
+          "length": "4",
+          "metaType": "PrimitiveType",
+          "id": "Short",
+          "uri": "Short"
+        },
+        "length": "4",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_GZTTMP_0000073434"
+        },
+        "_key": "7469e98f-8078-47f6-8afd-64b464a76c7d",
+        "metadataLevel": "0",
+        "version": 46,
+        "uri": "common.base.LogicDelete.dr",
+        "biztype": "int",
+        "modifyTime": "2020-03-31 20:24:20:167",
+        "createTime": "2020-03-31 20:24:20:167",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }, {
+          "code": "notGenerate",
+          "name": "模版不生成"
+        }],
+        "isPartition": true,
+        "name": "dr",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "7469e98f-8078-47f6-8afd-64b464a76c7d",
+        "precise": "2"
+      }, {
+        "fieldName": "tenant_id",
+        "nullable": "true",
+        "displayName": "租户id",
+        "metadataLevel": "0",
+        "_key": "0a7e6dfe-8719-47db-be65-a838f3c412d9",
+        "modifyTime": "2020-03-31 20:24:20:284",
+        "isNewDataCode": false,
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }, {
+          "code": "notGenerate",
+          "name": "模版不生成"
+        }],
+        "isPartition": true,
+        "id": "0a7e6dfe-8719-47db-be65-a838f3c412d9",
+        "precise": "2",
+        "uiHide": true,
+        "dataType": {
+          "name": "友互通用户租户",
+          "metaType": "Class",
+          "id": "ec9cb2fe-b176-4a1d-8db8-ac8188b468a9",
+          "uri": "basedoc.yht.PubUserTenant"
+        },
+        "length": 256,
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_FI_FP_0000034981"
+        },
+        "version": 44,
+        "uri": "common.base.Tenant.tenant_id",
+        "biztype": "text",
+        "partitionName": "tenant_id",
+        "createTime": "2020-03-31 20:24:20:284",
+        "isNewDataName": false,
+        "name": "tenant_id",
+        "tenantId": "sys",
+        "metaType": "Property"
+      }, {
+        "fieldName": "pk_temp",
+        "nullable": "true",
+        "displayName": "模版",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_FED_FW_0000022090"
+        },
+        "metadataLevel": "0",
+        "_key": "4b955921-b596-4bcf-8982-187e00fd2652",
+        "version": 7,
+        "uri": "common.base.Template.pk_temp",
+        "categoriesString": "模版隐藏",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 19:06:10:332",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 19:06:10:332",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refcode": "uiHide",
+          "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refname": "模版隐藏"
+        }],
+        "isNewDataName": false,
+        "name": "pk_temp",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "4b955921-b596-4bcf-8982-187e00fd2652",
+        "precise": "2"
+      }, {
+        "fieldName": "version",
+        "nullable": "true",
+        "displayName": "版本",
+        "uiHide": true,
+        "dataType": {
+          "name": "整数",
+          "length": "6",
+          "metaType": "PrimitiveType",
+          "id": "Integer",
+          "uri": "Integer"
+        },
+        "length": "11",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_FED_EXAMP_0000020559"
+        },
+        "metadataLevel": "0",
+        "_key": "1234224d-e035-4583-8f67-e51eb6c02415",
+        "version": 14,
+        "uri": "common.base.Template.version",
+        "categoriesString": "模版隐藏",
+        "biztype": "int",
+        "modifyTime": "2020-03-30 19:06:10:343",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 19:06:10:343",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refcode": "uiHide",
+          "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "refname": "模版隐藏"
+        }],
+        "isNewDataName": false,
+        "name": "version",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "1234224d-e035-4583-8f67-e51eb6c02415",
+        "precise": "2"
+      }, {
+        "fieldName": "ytenant_id",
+        "nullable": true,
+        "displayName": "租户id",
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": 256,
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_FI_FP_0000034981"
+        },
+        "metadataLevel": "0",
+        "_key": "cb57bc26-f707-4465-bca1-eef3e2e5f991",
+        "version": 4,
+        "uri": "ucfbase.ucfbaseItf.IYTenant.ytenant",
+        "modifyTime": "2021-02-24 09:49:42:414",
+        "isNewDataCode": false,
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }, {
+          "code": "notGenerate",
+          "name": "模版不生成"
+        }],
+        "createTime": "2021-02-24 09:49:42:414",
+        "isNewDataName": false,
+        "isPartition": true,
+        "name": "ytenant",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "cb57bc26-f707-4465-bca1-eef3e2e5f991",
+        "precise": 2
+      }, {
+        "fieldName": "bizFlowId",
+        "nullable": "true",
+        "displayName": "业务流id",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_SD_SCMSA-UI_0001007478"
+        },
+        "metadataLevel": "0",
+        "_key": "a81cbafe-685e-4d5e-8a7c-02efc991f9f9",
+        "version": 10,
+        "uri": "bd.businessFlow.BusinessFlowItf.bizFlowId",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:31:990",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:31:990",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "bizFlowId",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "a81cbafe-685e-4d5e-8a7c-02efc991f9f9",
+        "precise": "2"
+      }, {
+        "fieldName": "isFlowCoreBill",
+        "nullable": "true",
+        "displayName": "是否核心单据",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_SD_SCMSA-UI_0001007483"
+        },
+        "metadataLevel": "0",
+        "_key": "ac856226-735d-4f01-8745-6c23aa320a2f",
+        "version": 10,
+        "uri": "bd.businessFlow.BusinessFlowItf.isFlowCoreBill",
+        "biztype": "switch",
+        "modifyTime": "2020-03-30 20:03:32:005",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:005",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "isFlowCoreBill",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "ac856226-735d-4f01-8745-6c23aa320a2f",
+        "precise": "2"
+      }, {
+        "fieldName": "bizFlowName",
+        "nullable": "true",
+        "displayName": "流程名称",
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "200",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_OA_XTLCZX_0000030341"
+        },
+        "metadataLevel": "0",
+        "_key": "2cb7ba62-93a5-46f2-b089-77528bdc821a",
+        "version": 14,
+        "uri": "bd.businessFlow.BusinessFlowItf.bizFlowName",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:32:015",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:015",
+        "isNewDataName": false,
+        "name": "bizFlowName",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "2cb7ba62-93a5-46f2-b089-77528bdc821a",
+        "precise": "2"
+      }, {
+        "fieldName": "bizFlowVersion",
+        "nullable": "true",
+        "displayName": "流程版本",
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "20",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_METADATA_0001077515"
+        },
+        "metadataLevel": "0",
+        "_key": "a0cbc7b3-1dca-42c0-9032-673f4ee7a5e0",
+        "version": 10,
+        "uri": "bd.businessFlow.BusinessFlowItf.bizFlowVersion",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:32:025",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:025",
+        "isNewDataName": false,
+        "name": "bizFlowVersion",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "a0cbc7b3-1dca-42c0-9032-673f4ee7a5e0",
+        "precise": "2"
+      }, {
+        "fieldName": "source_id",
+        "nullable": "true",
+        "displayName": "上游单据主表id",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_PRINT_0000056508"
+        },
+        "metadataLevel": "0",
+        "_key": "591617b5-d72a-4f9a-8408-39372975c03f",
+        "version": 12,
+        "uri": "bd.businessFlow.BusinessFlowItf.source_id",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:32:035",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:035",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "source_id",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "591617b5-d72a-4f9a-8408-39372975c03f",
+        "precise": "2"
+      }, {
+        "fieldName": "sourcechild_id",
+        "nullable": "true",
+        "displayName": "上游单据子表id",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_PRINT_0000057390"
+        },
+        "metadataLevel": "0",
+        "_key": "208181fa-7326-4d66-8bb8-6c5dbeda257d",
+        "version": 14,
+        "uri": "bd.businessFlow.BusinessFlowItf.sourcechild_id",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:32:045",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:045",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "sourcechild_id",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "208181fa-7326-4d66-8bb8-6c5dbeda257d",
+        "precise": "2"
+      }, {
+        "fieldName": "source_billtype",
+        "nullable": "true",
+        "displayName": "上游单据类型",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_PRINT_0000057185"
+        },
+        "metadataLevel": "0",
+        "_key": "926bde20-10e4-4ec0-8b38-213aff2ca5ce",
+        "version": 12,
+        "uri": "bd.businessFlow.BusinessFlowItf.source_billtype",
+        "biztype": "text",
+        "modifyTime": "2020-03-30 20:03:32:054",
+        "isNewDataCode": false,
+        "createTime": "2020-03-30 20:03:32:054",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "source_billtype",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "926bde20-10e4-4ec0-8b38-213aff2ca5ce",
+        "precise": "2"
+      }, {
+        "fieldName": "bizFlowInstanceId",
+        "nullable": "true",
+        "displayName": "业务流实例id",
+        "uiHide": true,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_METADATA_0001158715"
+        },
+        "metadataLevel": "0",
+        "_key": "f8efe1a1-450f-4b08-aa4d-feabcdfdaabb",
+        "version": 7,
+        "uri": "bd.businessFlow.BusinessFlowItf.bizFlowInstanceId",
+        "biztype": "text",
+        "modifyTime": "2020-04-29 09:53:05:273",
+        "isNewDataCode": false,
+        "createTime": "2020-04-29 09:53:05:273",
+        "terms": [{
+          "code": "uiHide",
+          "name": "模版隐藏",
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataName": false,
+        "name": "bizFlowInstanceId",
+        "tenantId": "sys",
+        "metaType": "Property",
+        "id": "f8efe1a1-450f-4b08-aa4d-feabcdfdaabb",
+        "precise": "2"
+      }, {
+        "fieldName": "create_time",
+        "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+        "nullable": true,
+        "displayName": "创建时间",
+        "dataType": {
+          "name": "日期时间",
+          "metaType": "PrimitiveType",
+          "id": "Timestamp",
+          "uri": "Timestamp"
+        },
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_OA_XTLCZX_0000030652"
+        },
+        "type": "DateTime",
+        "_key": "d9b6352c-141b-49ee-b74c-cf14f7fdbabd",
+        "uri": "ucfbase.ucfbaseItf.IAuditInfo.createTime",
+        "version": 26,
+        "categoriesString": "",
+        "biztype": "dateTime",
+        "terms": [],
+        "name": "createTime",
+        "metaType": "Property",
+        "id": "d9b6352c-141b-49ee-b74c-cf14f7fdbabd"
+      }, {
+        "fieldName": "modify_time",
+        "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+        "nullable": true,
+        "displayName": "修改时间",
+        "dataType": {
+          "name": "日期时间",
+          "metaType": "PrimitiveType",
+          "id": "Timestamp",
+          "uri": "Timestamp"
+        },
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_GZTORG_0000035405"
+        },
+        "type": "DateTime",
+        "_key": "109dd213-7499-4f2f-a37b-2477ec3f5a78",
+        "uri": "ucfbase.ucfbaseItf.IAuditInfo.modifyTime",
+        "version": 24,
+        "categoriesString": "",
+        "biztype": "dateTime",
+        "terms": [],
+        "name": "modifyTime",
+        "metaType": "Property",
+        "id": "109dd213-7499-4f2f-a37b-2477ec3f5a78"
+      }, {
+        "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+        "nullable": true,
+        "displayName": "创建人",
+        "dataType": {
+          "name": "用户",
+          "metaType": "Class",
+          "id": "3991fd81-191b-4fb2-bd23-f484e057e116",
+          "uri": "ucfbase.yht.PubUserTenant"
+        },
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_OA_XTTMCENTER_0000035090"
+        },
+        "type": "ucfbase.yht.PubUserTenant",
+        "_key": "ad69862b-865e-4b93-bc71-6e89c6e3859d",
+        "uri": "ucfbase.ucfbaseItf.IAuditInfo.creator",
+        "version": 23,
+        "categoriesString": "",
+        "biztype": "quote",
+        "terms": [],
+        "name": "creator",
+        "metaType": "Property",
+        "id": "ad69862b-865e-4b93-bc71-6e89c6e3859d"
+      }, {
+        "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+        "nullable": true,
+        "displayName": "修改人",
+        "dataType": {
+          "name": "用户",
+          "metaType": "Class",
+          "id": "3991fd81-191b-4fb2-bd23-f484e057e116",
+          "uri": "ucfbase.yht.PubUserTenant"
+        },
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_GZTORG_0000035173"
+        },
+        "type": "ucfbase.yht.PubUserTenant",
+        "_key": "7f89a3af-e921-4d68-b440-e17925150d44",
+        "uri": "ucfbase.ucfbaseItf.IAuditInfo.modifier",
+        "version": 22,
+        "categoriesString": "",
+        "biztype": "quote",
+        "terms": [],
+        "name": "modifier",
+        "metaType": "Property",
+        "id": "7f89a3af-e921-4d68-b440-e17925150d44"
+      }, {
+        "fieldName": "id",
+        "parentUri": "ucfbase.entity.BizObject",
+        "nullable": true,
+        "displayName": "ID",
+        "type": "String",
+        "_key": "5a93627b-27f7-40cb-a8fc-d6599545710b",
+        "terms": [{
+          "code": "REF.ID",
+          "description": "isKey",
+          "memo": "isKey",
+          "targetType": "PROPERTY",
+          "refcode": "REF.ID",
+          "version": 20,
+          "refname": "档案ID",
+          "mul_language": {
+            "zh_TW": {},
+            "en_US": {},
+            "zh_CN": {
+              "name": "档案ID"
+            }
+          },
+          "modifyTime": "2020-06-13 14:42:14:475",
+          "name": "档案ID",
+          "_id": {
+            "$oid": "5bac2f75cff47e00079c4687"
+          },
+          "id": "eb3174e2-852a-46a3-ac1d-2268f1499ebf",
+          "categories": [{
+            "code": "REF.PROPERTY",
+            "name": "档案",
+            "description": "档案",
+            "_id": {
+              "$oid": "5bac2a8ecff47e00079c4668"
+            },
+            "id": "13f0ded4-e85a-493d-b470-fa6f1d0ca049",
+            "parentId": "0",
+            "mul_language": {
+              "zh_TW": {
+                "name": "檔案"
+              },
+              "en_US": {
+                "name": "File"
+              },
+              "zh_CN": {
+                "name": "档案"
+              }
+            }
+          }],
+          "refpk": "eb3174e2-852a-46a3-ac1d-2268f1499ebf",
+          "key": "eb3174e2-852a-46a3-ac1d-2268f1499ebf"
+        }, {
+          "code": "uiHide",
+          "description": "",
+          "memo": "",
+          "targetType": "PROPERTY",
+          "refcode": "uiHide",
+          "refname": "模版隐藏",
+          "mul_language": {
+            "zh_TW": {},
+            "en_US": {},
+            "zh_CN": {
+              "name": "模版隐藏"
+            }
+          },
+          "modifyTime": "2020-07-06 10:53:42:222",
+          "createTime": "2020-07-06 10:53:42:222",
+          "name": "模版隐藏",
+          "_id": {
+            "$oid": "5f0292362c5df9005fdd5ad5"
+          },
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "categories": [{
+            "code": "reportTerms",
+            "modifyTime": "2020-04-02 18:41:34:026",
+            "createTime": "2020-04-02 18:41:34:026",
+            "name": "报表",
+            "description": "",
+            "_id": {
+              "$oid": "5e85c15ec7937e005e78a031"
+            },
+            "id": "24242596-c6b3-4546-8fe3-fce3d15bbce1",
+            "parentId": "0",
+            "mul_language": {
+              "zh_TW": {},
+              "en_US": {},
+              "zh_CN": {
+                "name": "报表"
+              }
+            }
+          }],
+          "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataCode": false,
+        "id": "5a93627b-27f7-40cb-a8fc-d6599545710b",
+        "precise": "2",
+        "key": false,
+        "uiHide": false,
+        "dataType": {
+          "name": "字符型",
+          "metaType": "PrimitiveType",
+          "id": "String",
+          "uri": "String"
+        },
+        "length": "36",
+        "isKey": true,
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_GZTTMP_0000073395"
+        },
+        "uri": "ucfbase.entity.BizObject.id",
+        "version": 7,
+        "categoriesString": "档案ID,模版隐藏",
+        "biztype": "int",
+        "is_mul_language": false,
+        "isNewDataName": false,
+        "name": "id",
+        "metaType": "Property"
+      }, {
+        "fieldName": "pubts",
+        "parentUri": "ucfbase.entity.BizObject",
+        "nullable": true,
+        "displayName": "时间戳",
+        "type": "DateTime",
+        "_key": "d7863845-8d1b-4453-8e2c-3d7eb1503dea",
+        "terms": [{
+          "code": "uiHide",
+          "description": "",
+          "memo": "",
+          "targetType": "PROPERTY",
+          "refcode": "uiHide",
+          "refname": "模版隐藏",
+          "mul_language": {
+            "zh_TW": {},
+            "en_US": {},
+            "zh_CN": {
+              "name": "模版隐藏"
+            }
+          },
+          "modifyTime": "2020-07-06 10:53:42:222",
+          "createTime": "2020-07-06 10:53:42:222",
+          "name": "模版隐藏",
+          "_id": {
+            "$oid": "5f0292362c5df9005fdd5ad5"
+          },
+          "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "categories": [{
+            "code": "reportTerms",
+            "modifyTime": "2020-04-02 18:41:34:026",
+            "createTime": "2020-04-02 18:41:34:026",
+            "name": "报表",
+            "description": "",
+            "_id": {
+              "$oid": "5e85c15ec7937e005e78a031"
+            },
+            "id": "24242596-c6b3-4546-8fe3-fce3d15bbce1",
+            "parentId": "0",
+            "mul_language": {
+              "zh_TW": {},
+              "en_US": {},
+              "zh_CN": {
+                "name": "报表"
+              }
+            }
+          }],
+          "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+          "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+        }],
+        "isNewDataCode": false,
+        "id": "d7863845-8d1b-4453-8e2c-3d7eb1503dea",
+        "precise": "2",
+        "key": false,
+        "uiHide": true,
+        "dataType": {
+          "name": "日期时间",
+          "metaType": "PrimitiveType",
+          "id": "Timestamp",
+          "uri": "Timestamp"
+        },
+        "isKey": false,
+        "modelType": "EntityAttrModel",
+        "mul_language_resid": {
+          "displayName": "P_YS_PF_GZTORG_0000035390"
+        },
+        "uri": "ucfbase.entity.BizObject.pubts",
+        "version": 18,
+        "isSyncKey": true,
+        "categoriesString": "模版隐藏",
+        "biztype": "dateTime",
+        "is_mul_language": false,
+        "isNewDataName": false,
+        "name": "pubts",
+        "metaType": "Property"
+      }],
+      "parentAssociation": "dd14fcbc-9245-4896-933b-c535a17c7695",
+      "foreignKey": "myMain2_id",
+      "newFKRule": true,
+      "status": "4",
+      "primaryKey": "id"
+    }],
+    "options": [{
+      "parent": null,
+      "modifyTime": "2019-12-06 11:26:25:916",
+      "createTime": "2019-12-06 11:26:25:916",
+      "displayName": "审批",
+      "name": "approvalFlow",
+      "_id": {
+        "$oid": "5e44b66f9f00b604ce8869e2"
+      },
+      "id": "3feeb562-07a8-4f76-bd1f-2227532798",
+      "interface": [{
+        "id": "2afcddfe-a75b-4ead-af99-fbf1d3bed1e0",
+        "uri": "bd.approvalFlow.ApprovalFlowItf"
+      }],
+      "status": "1"
+    }, {
+      "parent": null,
+      "modifyTime": "2019-12-06 11:26:25:916",
+      "createTime": "2019-12-06 11:26:25:916",
+      "displayName": "业务流",
+      "name": "businessFlow",
+      "_id": {
+        "$oid": "5e44b8c99f00b604ce88849e"
+      },
+      "id": "3feeb562-07a8-4f76-bd1f-222753279234",
+      "interface": [{
+        "id": "b49c8db2-a3a7-41c4-95f5-d22542b8e061",
+        "uri": "bd.businessFlow.BusinessFlowItf"
+      }],
+      "status": "1",
+      "childEnable": true
+    }, {
+      "parent": [{
+        "name": "基类",
+        "id": "5be01275-6bc3-491d-b5a1-b7040bb24a3c",
+        "uri": "ucfbase.entity.BizObject"
+      }],
+      "modifyTime": "2019-12-06 11:26:25:916",
+      "createTime": "2019-12-06 11:26:25:916",
+      "displayName": "基础可选项",
+      "name": "base",
+      "_id": {
+        "$oid": "5e815ea766279415761cfe58"
+      },
+      "id": "666eb562-06a8-4f23-bd1f-222753279123",
+      "interface": [{
+        "name": "逻辑删除",
+        "id": "bf3e1492-1609-4155-8af8-81d7bc756d3d",
+        "uri": "common.base.LogicDelete"
+      }, {
+        "name": "租户信息",
+        "id": "9b147d49-1ba6-4c0e-84cd-098a8ac1dcdf",
+        "uri": "common.base.Tenant"
+      }, {
+        "name": "租户信息",
+        "id": "ed80d4e6-896d-435d-89cc-3c33e488dbed",
+        "uri": "ucfbase.ucfbaseItf.IYTenant"
+      }, {
+        "name": "审计信息",
+        "id": "d7e946f3-f842-475c-99e5-ea2da921466e",
+        "uri": "ucfbase.ucfbaseItf.IAuditInfo"
+      }, {
+        "name": "模版接口",
+        "id": "bdcd5899-08e9-46df-8da3-ea4d275fec6d",
+        "uri": "common.base.Template"
+      }],
+      "status": "0"
+    }],
+    "id": "dd14fcbc-9245-4896-933b-c535a17c7695",
+    "mul_language_resid": {
+      "displayName": "C_YS_PF_METADATA_0000219622"
+    },
+    "modelType": "EntityAttrModel",
+    "version": 1,
+    "uri": "GT87268AT200.GT87268AT200.myMain2",
+    "mul_language": {
+      "zh_TW": {
+        "displayName": ""
+      },
+      "en_US": {
+        "displayName": ""
+      },
+      "zh_CN": {
+        "displayName": "我的主2"
+      }
+    },
+    "ytenant_id": "a2ag7si9",
+    "metaComponentId": "5f7e2a21-6f5d-42bf-b195-2cef6299ea62",
+    "createTime": "2021-08-09 16:57:19:331",
+    "name": "myMain2",
+    "tenantId": "a2ag7si9",
+    "metaType": "Class",
+    "_id": {
+      "$oid": "6110edef6c2852002a5a4355"
+    },
+    "ownedAttribute": [{
+      "fieldName": "ytenant_id",
+      "nullable": true,
+      "displayName": "租户id",
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": 256,
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_FI_FP_0000034981"
+      },
+      "metadataLevel": "0",
+      "_key": "cb57bc26-f707-4465-bca1-eef3e2e5f991",
+      "version": 4,
+      "uri": "ucfbase.ucfbaseItf.IYTenant.ytenant",
+      "modifyTime": "2021-02-24 09:49:42:414",
+      "isNewDataCode": false,
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }, {
+        "code": "notGenerate",
+        "name": "模版不生成"
+      }],
+      "createTime": "2021-02-24 09:49:42:414",
+      "isNewDataName": false,
+      "isPartition": true,
+      "name": "ytenant",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "cb57bc26-f707-4465-bca1-eef3e2e5f991",
+      "precise": 2
+    }, {
+      "fieldName": "bizFlowId",
+      "nullable": "true",
+      "displayName": "业务流id",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_SD_SCMSA-UI_0001007478"
+      },
+      "metadataLevel": "0",
+      "_key": "a81cbafe-685e-4d5e-8a7c-02efc991f9f9",
+      "version": 10,
+      "uri": "bd.businessFlow.BusinessFlowItf.bizFlowId",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:31:990",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:31:990",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "bizFlowId",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "a81cbafe-685e-4d5e-8a7c-02efc991f9f9",
+      "precise": "2"
+    }, {
+      "fieldName": "verifystate",
+      "nullable": "true",
+      "displayName": "单据状态",
+      "dataType": {
+        "name": "整数",
+        "length": "6",
+        "metaType": "PrimitiveType",
+        "id": "Short",
+        "uri": "Short"
+      },
+      "length": "6",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_FI_CM_0000029118"
+      },
+      "metadataLevel": "0",
+      "_key": "9ea094bd-9dfc-4d32-a354-a9659dc1e46d",
+      "version": 17,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.verifystate",
+      "uiDataTypeCode": "systemEnum.systemEnum.sys_verifystate",
+      "biztype": "singleOption",
+      "modifyTime": "2020-03-30 19:06:10:413",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:413",
+      "isNewDataName": false,
+      "name": "verifystate",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "9ea094bd-9dfc-4d32-a354-a9659dc1e46d",
+      "precise": "2"
+    }, {
+      "fieldName": "string_0",
+      "serialNumber": 1,
+      "nullable": true,
+      "displayName": "字段1",
+      "dataType": {
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "metadataLevel": "2",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myMain2.new1",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": ""
+        }
+      },
+      "biztype": "text",
+      "hide": false,
+      "terms": [],
+      "isExtenal": true,
+      "name": "new1",
+      "metaType": "Property",
+      "id": "ffd30952-a62c-4548-9380-1ec98a33fc54",
+      "precise": "2",
+      "newData": true,
+      "status": "4"
+    }, {
+      "fieldName": "id",
+      "parentUri": "ucfbase.entity.BizObject",
+      "nullable": true,
+      "displayName": "ID",
+      "type": "String",
+      "_key": "5a93627b-27f7-40cb-a8fc-d6599545710b",
+      "terms": [{
+        "code": "REF.ID",
+        "description": "isKey",
+        "memo": "isKey",
+        "targetType": "PROPERTY",
+        "refcode": "REF.ID",
+        "version": 20,
+        "refname": "档案ID",
+        "mul_language": {
+          "zh_TW": {},
+          "en_US": {},
+          "zh_CN": {
+            "name": "档案ID"
+          }
+        },
+        "modifyTime": "2020-06-13 14:42:14:475",
+        "name": "档案ID",
+        "_id": {
+          "$oid": "5bac2f75cff47e00079c4687"
+        },
+        "id": "eb3174e2-852a-46a3-ac1d-2268f1499ebf",
+        "categories": [{
+          "code": "REF.PROPERTY",
+          "name": "档案",
+          "description": "档案",
+          "_id": {
+            "$oid": "5bac2a8ecff47e00079c4668"
+          },
+          "id": "13f0ded4-e85a-493d-b470-fa6f1d0ca049",
+          "parentId": "0",
+          "mul_language": {
+            "zh_TW": {
+              "name": "檔案"
+            },
+            "en_US": {
+              "name": "File"
+            },
+            "zh_CN": {
+              "name": "档案"
+            }
+          }
+        }],
+        "refpk": "eb3174e2-852a-46a3-ac1d-2268f1499ebf",
+        "key": "eb3174e2-852a-46a3-ac1d-2268f1499ebf"
+      }, {
+        "code": "uiHide",
+        "description": "",
+        "memo": "",
+        "targetType": "PROPERTY",
+        "refcode": "uiHide",
+        "refname": "模版隐藏",
+        "mul_language": {
+          "zh_TW": {},
+          "en_US": {},
+          "zh_CN": {
+            "name": "模版隐藏"
+          }
+        },
+        "modifyTime": "2020-07-06 10:53:42:222",
+        "createTime": "2020-07-06 10:53:42:222",
+        "name": "模版隐藏",
+        "_id": {
+          "$oid": "5f0292362c5df9005fdd5ad5"
+        },
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "categories": [{
+          "code": "reportTerms",
+          "modifyTime": "2020-04-02 18:41:34:026",
+          "createTime": "2020-04-02 18:41:34:026",
+          "name": "报表",
+          "description": "",
+          "_id": {
+            "$oid": "5e85c15ec7937e005e78a031"
+          },
+          "id": "24242596-c6b3-4546-8fe3-fce3d15bbce1",
+          "parentId": "0",
+          "mul_language": {
+            "zh_TW": {},
+            "en_US": {},
+            "zh_CN": {
+              "name": "报表"
+            }
+          }
+        }],
+        "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataCode": false,
+      "id": "5a93627b-27f7-40cb-a8fc-d6599545710b",
+      "precise": "2",
+      "key": false,
+      "uiHide": false,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "isKey": true,
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_GZTTMP_0000073395"
+      },
+      "uri": "ucfbase.entity.BizObject.id",
+      "version": 7,
+      "categoriesString": "档案ID,模版隐藏",
+      "biztype": "int",
+      "is_mul_language": false,
+      "isNewDataName": false,
+      "name": "id",
+      "metaType": "Property"
+    }, {
+      "fieldName": "bizFlowVersion",
+      "nullable": "true",
+      "displayName": "流程版本",
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "20",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_METADATA_0001077515"
+      },
+      "metadataLevel": "0",
+      "_key": "a0cbc7b3-1dca-42c0-9032-673f4ee7a5e0",
+      "version": 10,
+      "uri": "bd.businessFlow.BusinessFlowItf.bizFlowVersion",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:32:025",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:025",
+      "isNewDataName": false,
+      "name": "bizFlowVersion",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "a0cbc7b3-1dca-42c0-9032-673f4ee7a5e0",
+      "precise": "2"
+    }, {
+      "fieldName": "string_4",
+      "serialNumber": 5,
+      "nullable": true,
+      "displayName": "字段5",
+      "dataType": {
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "metadataLevel": "2",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myMain2.new5",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": ""
+        }
+      },
+      "biztype": "text",
+      "hide": false,
+      "terms": [],
+      "isExtenal": true,
+      "name": "new5",
+      "metaType": "Property",
+      "id": "1dd990fe-5012-43ea-ba35-bcaa88d07fe1",
+      "precise": "2",
+      "newData": true,
+      "status": "4"
+    }, {
+      "fieldName": "string_3",
+      "serialNumber": 4,
+      "nullable": true,
+      "displayName": "字段4",
+      "dataType": {
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "metadataLevel": "2",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myMain2.new4",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": ""
+        }
+      },
+      "biztype": "text",
+      "hide": false,
+      "terms": [],
+      "isExtenal": true,
+      "name": "new4",
+      "metaType": "Property",
+      "id": "87a0ace3-b37e-42c1-9c36-32083d182771",
+      "precise": "2",
+      "newData": true,
+      "status": "4"
+    }, {
+      "fieldName": "tenant_id",
+      "nullable": "true",
+      "displayName": "租户id",
+      "metadataLevel": "0",
+      "_key": "0a7e6dfe-8719-47db-be65-a838f3c412d9",
+      "modifyTime": "2020-03-31 20:24:20:284",
+      "isNewDataCode": false,
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }, {
+        "code": "notGenerate",
+        "name": "模版不生成"
+      }],
+      "isPartition": true,
+      "id": "0a7e6dfe-8719-47db-be65-a838f3c412d9",
+      "precise": "2",
+      "uiHide": true,
+      "dataType": {
+        "name": "友互通用户租户",
+        "metaType": "Class",
+        "id": "ec9cb2fe-b176-4a1d-8db8-ac8188b468a9",
+        "uri": "basedoc.yht.PubUserTenant"
+      },
+      "length": 256,
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_FI_FP_0000034981"
+      },
+      "version": 44,
+      "uri": "common.base.Tenant.tenant_id",
+      "biztype": "text",
+      "partitionName": "tenant_id",
+      "createTime": "2020-03-31 20:24:20:284",
+      "isNewDataName": false,
+      "name": "tenant_id",
+      "tenantId": "sys",
+      "metaType": "Property"
+    }, {
+      "fieldName": "create_time",
+      "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+      "nullable": true,
+      "displayName": "创建时间",
+      "dataType": {
+        "name": "日期时间",
+        "metaType": "PrimitiveType",
+        "id": "Timestamp",
+        "uri": "Timestamp"
+      },
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_OA_XTLCZX_0000030652"
+      },
+      "type": "DateTime",
+      "_key": "d9b6352c-141b-49ee-b74c-cf14f7fdbabd",
+      "uri": "ucfbase.ucfbaseItf.IAuditInfo.createTime",
+      "version": 26,
+      "categoriesString": "",
+      "biztype": "dateTime",
+      "terms": [],
+      "name": "createTime",
+      "metaType": "Property",
+      "id": "d9b6352c-141b-49ee-b74c-cf14f7fdbabd"
+    }, {
+      "fieldName": "pk_procdefins",
+      "nullable": "true",
+      "displayName": "流程实例",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "64",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_METADATA_0001041397"
+      },
+      "metadataLevel": "0",
+      "_key": "9e1d2e78-65cb-49d4-87ae-9f02e0e85495",
+      "version": 10,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.pk_procdefins",
+      "categoriesString": "模版隐藏",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 19:06:10:306",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:306",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "pk_procdefins",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "9e1d2e78-65cb-49d4-87ae-9f02e0e85495",
+      "precise": "2"
+    }, {
+      "fieldName": "bizFlowInstanceId",
+      "nullable": "true",
+      "displayName": "业务流实例id",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_METADATA_0001158715"
+      },
+      "metadataLevel": "0",
+      "_key": "f8efe1a1-450f-4b08-aa4d-feabcdfdaabb",
+      "version": 7,
+      "uri": "bd.businessFlow.BusinessFlowItf.bizFlowInstanceId",
+      "biztype": "text",
+      "modifyTime": "2020-04-29 09:53:05:273",
+      "isNewDataCode": false,
+      "createTime": "2020-04-29 09:53:05:273",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "bizFlowInstanceId",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "f8efe1a1-450f-4b08-aa4d-feabcdfdaabb",
+      "precise": "2"
+    }, {
+      "fieldName": "string_2",
+      "serialNumber": 3,
+      "nullable": true,
+      "displayName": "字段3",
+      "dataType": {
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "metadataLevel": "2",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myMain2.new3",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": ""
+        }
+      },
+      "biztype": "text",
+      "hide": false,
+      "terms": [],
+      "isExtenal": true,
+      "name": "new3",
+      "metaType": "Property",
+      "id": "d6180ece-2684-4011-9443-c38101101dc7",
+      "precise": "2",
+      "newData": true,
+      "status": "4"
+    }, {
+      "fieldName": "bizFlowName",
+      "nullable": "true",
+      "displayName": "流程名称",
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_OA_XTLCZX_0000030341"
+      },
+      "metadataLevel": "0",
+      "_key": "2cb7ba62-93a5-46f2-b089-77528bdc821a",
+      "version": 14,
+      "uri": "bd.businessFlow.BusinessFlowItf.bizFlowName",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:32:015",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:015",
+      "isNewDataName": false,
+      "name": "bizFlowName",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "2cb7ba62-93a5-46f2-b089-77528bdc821a",
+      "precise": "2"
+    }, {
+      "fieldName": "dr",
+      "nullable": "true",
+      "displayName": "逻辑删除标记",
+      "uiHide": true,
+      "defaultValue": "0",
+      "dataType": {
+        "name": "短整数",
+        "length": "4",
+        "metaType": "PrimitiveType",
+        "id": "Short",
+        "uri": "Short"
+      },
+      "length": "4",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_GZTTMP_0000073434"
+      },
+      "_key": "7469e98f-8078-47f6-8afd-64b464a76c7d",
+      "metadataLevel": "0",
+      "version": 46,
+      "uri": "common.base.LogicDelete.dr",
+      "biztype": "int",
+      "modifyTime": "2020-03-31 20:24:20:167",
+      "createTime": "2020-03-31 20:24:20:167",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }, {
+        "code": "notGenerate",
+        "name": "模版不生成"
+      }],
+      "isPartition": true,
+      "name": "dr",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "7469e98f-8078-47f6-8afd-64b464a76c7d",
+      "precise": "2"
+    }, {
+      "fieldName": "startorg",
+      "nullable": "true",
+      "displayName": "发起人组织",
+      "uiHide": true,
+      "dataType": {
+        "name": "组织单元",
+        "cRefType": "ucf-org-center.org_unit_tree_ref",
+        "metaType": "Class",
+        "id": "14302233-1394-4a70-94e1-bed51636f312",
+        "uri": "org.func.BaseOrg",
+        "refReturn": "name"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_OA_XTLCZX_0000030250"
+      },
+      "metadataLevel": "0",
+      "_key": "3545019e-c576-4c23-8152-5cfe4be202e8",
+      "version": 9,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.startorg",
+      "categoriesString": "模版隐藏",
+      "biztype": "quote",
+      "modifyTime": "2020-03-30 19:06:10:352",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:352",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "startorg",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "3545019e-c576-4c23-8152-5cfe4be202e8",
+      "precise": "2"
+    }, {
+      "fieldName": "pk_temp",
+      "nullable": "true",
+      "displayName": "模版",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_FED_FW_0000022090"
+      },
+      "metadataLevel": "0",
+      "_key": "4b955921-b596-4bcf-8982-187e00fd2652",
+      "version": 7,
+      "uri": "common.base.Template.pk_temp",
+      "categoriesString": "模版隐藏",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 19:06:10:332",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:332",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refcode": "uiHide",
+        "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refname": "模版隐藏"
+      }],
+      "isNewDataName": false,
+      "name": "pk_temp",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "4b955921-b596-4bcf-8982-187e00fd2652",
+      "precise": "2"
+    }, {
+      "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+      "nullable": true,
+      "displayName": "创建人",
+      "dataType": {
+        "name": "用户",
+        "metaType": "Class",
+        "id": "3991fd81-191b-4fb2-bd23-f484e057e116",
+        "uri": "ucfbase.yht.PubUserTenant"
+      },
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_OA_XTTMCENTER_0000035090"
+      },
+      "type": "ucfbase.yht.PubUserTenant",
+      "_key": "ad69862b-865e-4b93-bc71-6e89c6e3859d",
+      "uri": "ucfbase.ucfbaseItf.IAuditInfo.creator",
+      "version": 23,
+      "categoriesString": "",
+      "biztype": "quote",
+      "terms": [],
+      "name": "creator",
+      "metaType": "Property",
+      "id": "ad69862b-865e-4b93-bc71-6e89c6e3859d"
+    }, {
+      "fieldName": "pk_procdef",
+      "nullable": "true",
+      "displayName": "流程定义",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "64",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_METADATA_0001041399"
+      },
+      "metadataLevel": "0",
+      "_key": "28c6ecc6-80f7-4020-9a43-8e54ae38bf1d",
+      "version": 9,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.pk_procdef",
+      "categoriesString": "模版隐藏",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 19:06:10:320",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:320",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "pk_procdef",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "28c6ecc6-80f7-4020-9a43-8e54ae38bf1d",
+      "precise": "2"
+    }, {
+      "fieldName": "source_billtype",
+      "nullable": "true",
+      "displayName": "上游单据类型",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_PRINT_0000057185"
+      },
+      "metadataLevel": "0",
+      "_key": "926bde20-10e4-4ec0-8b38-213aff2ca5ce",
+      "version": 12,
+      "uri": "bd.businessFlow.BusinessFlowItf.source_billtype",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:32:054",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:054",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "source_billtype",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "926bde20-10e4-4ec0-8b38-213aff2ca5ce",
+      "precise": "2"
+    }, {
+      "fieldName": "isFlowCoreBill",
+      "nullable": "true",
+      "displayName": "是否核心单据",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_SD_SCMSA-UI_0001007483"
+      },
+      "metadataLevel": "0",
+      "_key": "ac856226-735d-4f01-8745-6c23aa320a2f",
+      "version": 10,
+      "uri": "bd.businessFlow.BusinessFlowItf.isFlowCoreBill",
+      "biztype": "switch",
+      "modifyTime": "2020-03-30 20:03:32:005",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:005",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "isFlowCoreBill",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "ac856226-735d-4f01-8745-6c23aa320a2f",
+      "precise": "2"
+    }, {
+      "fieldName": "source_id",
+      "nullable": "true",
+      "displayName": "上游单据主表id",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_PRINT_0000056508"
+      },
+      "metadataLevel": "0",
+      "_key": "591617b5-d72a-4f9a-8408-39372975c03f",
+      "version": 12,
+      "uri": "bd.businessFlow.BusinessFlowItf.source_id",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:32:035",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:035",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "source_id",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "591617b5-d72a-4f9a-8408-39372975c03f",
+      "precise": "2"
+    }, {
+      "fieldName": "string_1",
+      "serialNumber": 2,
+      "nullable": true,
+      "displayName": "字段2",
+      "dataType": {
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "200",
+      "modelType": "EntityAttrModel",
+      "metadataLevel": "2",
+      "version": 1,
+      "uri": "GT87268AT200.GT87268AT200.myMain2.new2",
+      "mul_language": {
+        "zh_TW": {
+          "displayName": ""
+        },
+        "en_US": {
+          "displayName": ""
+        },
+        "zh_CN": {
+          "displayName": ""
+        }
+      },
+      "biztype": "text",
+      "hide": false,
+      "terms": [],
+      "isExtenal": true,
+      "name": "new2",
+      "metaType": "Property",
+      "id": "77fd846a-cad4-429c-85c4-79388c79a4b1",
+      "precise": "2",
+      "newData": true,
+      "status": "4"
+    }, {
+      "fieldName": "isWfControlled",
+      "nullable": true,
+      "displayName": "是否审批流控制",
+      "uiHide": true,
+      "dataType": {
+        "name": "布尔型",
+        "metaType": "PrimitiveType",
+        "id": "Boolean",
+        "uri": "Boolean"
+      },
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_PRINT_0000065041"
+      },
+      "metadataLevel": "0",
+      "version": 0,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.isWfControlled",
+      "categoriesString": "模版隐藏",
+      "biztype": "switch",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "name": "isWfControlled",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "e8d04ac1-00a2-4efa-9561-9647be94356d",
+      "precise": 2
+    }, {
+      "fieldName": "version",
+      "nullable": "true",
+      "displayName": "版本",
+      "uiHide": true,
+      "dataType": {
+        "name": "整数",
+        "length": "6",
+        "metaType": "PrimitiveType",
+        "id": "Integer",
+        "uri": "Integer"
+      },
+      "length": "11",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_FED_EXAMP_0000020559"
+      },
+      "metadataLevel": "0",
+      "_key": "1234224d-e035-4583-8f67-e51eb6c02415",
+      "version": 14,
+      "uri": "common.base.Template.version",
+      "categoriesString": "模版隐藏",
+      "biztype": "int",
+      "modifyTime": "2020-03-30 19:06:10:343",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:343",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refcode": "uiHide",
+        "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "refname": "模版隐藏"
+      }],
+      "isNewDataName": false,
+      "name": "version",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "1234224d-e035-4583-8f67-e51eb6c02415",
+      "precise": "2"
+    }, {
+      "fieldName": "sourcechild_id",
+      "nullable": "true",
+      "displayName": "上游单据子表id",
+      "uiHide": true,
+      "dataType": {
+        "name": "字符型",
+        "metaType": "PrimitiveType",
+        "id": "String",
+        "uri": "String"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_PRINT_0000057390"
+      },
+      "metadataLevel": "0",
+      "_key": "208181fa-7326-4d66-8bb8-6c5dbeda257d",
+      "version": 14,
+      "uri": "bd.businessFlow.BusinessFlowItf.sourcechild_id",
+      "biztype": "text",
+      "modifyTime": "2020-03-30 20:03:32:045",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 20:03:32:045",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "sourcechild_id",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "208181fa-7326-4d66-8bb8-6c5dbeda257d",
+      "precise": "2"
+    }, {
+      "fieldName": "startdept",
+      "nullable": "true",
+      "displayName": "发起人部门",
+      "uiHide": true,
+      "dataType": {
+        "name": "行政单元",
+        "metaType": "Class",
+        "id": "a4352e3c-3eda-4539-a7a9-ec00799be118",
+        "uri": "bd.adminOrg.AdminOrgVO"
+      },
+      "length": "36",
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_OA_XTLCZX_0000030673"
+      },
+      "metadataLevel": "0",
+      "_key": "26edd339-a3c8-4441-bfc1-990296626d3a",
+      "version": 9,
+      "uri": "bd.approvalFlow.ApprovalFlowItf.startdept",
+      "categoriesString": "模版隐藏",
+      "biztype": "quote",
+      "modifyTime": "2020-03-30 19:06:10:402",
+      "isNewDataCode": false,
+      "createTime": "2020-03-30 19:06:10:402",
+      "terms": [{
+        "code": "uiHide",
+        "name": "模版隐藏",
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataName": false,
+      "name": "startdept",
+      "tenantId": "sys",
+      "metaType": "Property",
+      "id": "26edd339-a3c8-4441-bfc1-990296626d3a",
+      "precise": "2"
+    }, {
+      "fieldName": "modify_time",
+      "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+      "nullable": true,
+      "displayName": "修改时间",
+      "dataType": {
+        "name": "日期时间",
+        "metaType": "PrimitiveType",
+        "id": "Timestamp",
+        "uri": "Timestamp"
+      },
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_GZTORG_0000035405"
+      },
+      "type": "DateTime",
+      "_key": "109dd213-7499-4f2f-a37b-2477ec3f5a78",
+      "uri": "ucfbase.ucfbaseItf.IAuditInfo.modifyTime",
+      "version": 24,
+      "categoriesString": "",
+      "biztype": "dateTime",
+      "terms": [],
+      "name": "modifyTime",
+      "metaType": "Property",
+      "id": "109dd213-7499-4f2f-a37b-2477ec3f5a78"
+    }, {
+      "parentUri": "ucfbase.ucfbaseItf.IAuditInfo",
+      "nullable": true,
+      "displayName": "修改人",
+      "dataType": {
+        "name": "用户",
+        "metaType": "Class",
+        "id": "3991fd81-191b-4fb2-bd23-f484e057e116",
+        "uri": "ucfbase.yht.PubUserTenant"
+      },
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_GZTORG_0000035173"
+      },
+      "type": "ucfbase.yht.PubUserTenant",
+      "_key": "7f89a3af-e921-4d68-b440-e17925150d44",
+      "uri": "ucfbase.ucfbaseItf.IAuditInfo.modifier",
+      "version": 22,
+      "categoriesString": "",
+      "biztype": "quote",
+      "terms": [],
+      "name": "modifier",
+      "metaType": "Property",
+      "id": "7f89a3af-e921-4d68-b440-e17925150d44"
+    }, {
+      "fieldName": "pubts",
+      "parentUri": "ucfbase.entity.BizObject",
+      "nullable": true,
+      "displayName": "时间戳",
+      "type": "DateTime",
+      "_key": "d7863845-8d1b-4453-8e2c-3d7eb1503dea",
+      "terms": [{
+        "code": "uiHide",
+        "description": "",
+        "memo": "",
+        "targetType": "PROPERTY",
+        "refcode": "uiHide",
+        "refname": "模版隐藏",
+        "mul_language": {
+          "zh_TW": {},
+          "en_US": {},
+          "zh_CN": {
+            "name": "模版隐藏"
+          }
+        },
+        "modifyTime": "2020-07-06 10:53:42:222",
+        "createTime": "2020-07-06 10:53:42:222",
+        "name": "模版隐藏",
+        "_id": {
+          "$oid": "5f0292362c5df9005fdd5ad5"
+        },
+        "id": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "categories": [{
+          "code": "reportTerms",
+          "modifyTime": "2020-04-02 18:41:34:026",
+          "createTime": "2020-04-02 18:41:34:026",
+          "name": "报表",
+          "description": "",
+          "_id": {
+            "$oid": "5e85c15ec7937e005e78a031"
+          },
+          "id": "24242596-c6b3-4546-8fe3-fce3d15bbce1",
+          "parentId": "0",
+          "mul_language": {
+            "zh_TW": {},
+            "en_US": {},
+            "zh_CN": {
+              "name": "报表"
+            }
+          }
+        }],
+        "refpk": "1a467f8a-cb3c-44da-819f-3916bc89f2a4",
+        "key": "1a467f8a-cb3c-44da-819f-3916bc89f2a4"
+      }],
+      "isNewDataCode": false,
+      "id": "d7863845-8d1b-4453-8e2c-3d7eb1503dea",
+      "precise": "2",
+      "key": false,
+      "uiHide": true,
+      "dataType": {
+        "name": "日期时间",
+        "metaType": "PrimitiveType",
+        "id": "Timestamp",
+        "uri": "Timestamp"
+      },
+      "isKey": false,
+      "modelType": "EntityAttrModel",
+      "mul_language_resid": {
+        "displayName": "P_YS_PF_GZTORG_0000035390"
+      },
+      "uri": "ucfbase.entity.BizObject.pubts",
+      "version": 18,
+      "isSyncKey": true,
+      "categoriesString": "模版隐藏",
+      "biztype": "dateTime",
+      "is_mul_language": false,
+      "isNewDataName": false,
+      "name": "pubts",
+      "metaType": "Property"
+    }],
+    "status": "4",
+    "primaryKey": "id"
+  }
+}

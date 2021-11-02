@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script src="https://ec-u8c-daily.yyuap.com/fe/fileArchive/fileLib.min.js"></script>
+<div id="app"></div>
+  <!-- <form method="post", action="https://www.baidu.com">
+    <input type="text" name="name" value="shit">
+    <button type="submit">tijiao</button>
+  </form> -->
+  <button type="button" class="el-button action-btn el-button--primary is-first"><!----><!----><span><span>
+        同意
+      </span></span></button>
+<script>
+window.workbenchCallback && window.workbenchCallback({
+  domId: 'app', // 挂载的节点  body
+  lang: 'zh_cn', // 当前的语言环境   en  zh_cn  zh_tw   默认中文简体zh_cn
+  dialogConfig: {
+    width: '600px', // 弹窗高度 默认 800px
+    height: '500px', // 弹窗宽度 默认 600px
+    transfer: true, // 是否放在body中  默认false
+    fullscreen: true, // 是否全屏 默认false
+    enableResize: true, // 是否允许改变窗口大小（为true是width，height失效） 默认false
+    enableDrag: true // 是否允许拖拽 默认false
+  },
+  handler: {
+    getSelectFileInfo (data) {
+      debugger
+    }
+  }
+})
+</script>
+</body>
+</html>

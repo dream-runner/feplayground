@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-15 11:32:43
+ * @LastEditTime: 2021-10-19 10:10:32
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/a/jqajax.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../jquery-3.2.1.min.js"></script>
+  <script>
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = e => {
+      if (xhr.readyState === 4 ) {
+        if (xhr.status === 404) {
+          xhr.onerror()
+        }
+      }
+    }
+    alert()
+    xhr.onerror = err => {
+      alert('shit sth goes wrong')
+    }
+    xhr.open('get', '/404')
+    xhr.send()
+
+    // $.ajax({
+    //   url: 'https://test.diwork.com/404',
+    //   error (err) {
+    //     debugger
+    //     console.error(err)
+    //   }
+    // })
+  </script>
+</body>
+</html>

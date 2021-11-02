@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="file" name="" onchange="onfilechange(this)" id="">
+  <script>
+
+    function onfilechange(e){
+      debugger
+    }
+    function downloadFile () {
+
+      var xhh = new XMLHttpRequest();
+      xhh.open("get", 'http://127.0.0.1/downresource/cli.zip' );
+      // xhh.open("post", 'http://127.0.0.1/download.xlsx' );
+      // xhh.open("post", 'https://imoss.yonyoucloud.com/upesn/esn/2837107/20190618/1834/f94bd23e-4908-4da5-acf6-bc82cc105707.png' );
+      xhh.setRequestHeader("Content-Type","application/json");
+      xhh.responseType = 'blob';
+      xhh.onreadystatechange = function () {
+          if (xhh.readyState === 4 && xhh.status === 200) {
+              var name = '视频';
+              // var name = xhh.getResponseHeader("ajax-filename");
+              var mimeType = xhh.getResponseHeader("ajax-mimeType");
+              // var blob = new Blob([xhh.response], {type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+              var blob = new Blob([xhh.response], {type: 'application/zip'});
+              var csvUrl = URL.createObjectURL(blob);
+              var link = document.createElement('a');
+              document.body.appendChild(link); //创建的标签添加到body，解决Firefox下无法打开页面的问题
+              link.href = csvUrl;
+              link.target = '_blank';
+              link.id = 'linkId',
+              link.className = 'linkId',
+              link.download = decodeURI(name);
+              document.getElementById("linkId").click();
+              // link.remove(); //将a标签移除
+              $('.linkId').remove()
+          }
+      };
+      xhh.send();
+    }
+    downloadFile()
+  </script>
+</body>
+</html>

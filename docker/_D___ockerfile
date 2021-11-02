@@ -1,0 +1,66 @@
+# 前端 iform_fe
+# 后端 iweb_cloudform
+# 后端webapp目录  iweb_cloudform/iform_parent/iform_parent/iform_web/src/main/webapp
+# dist/*  ---> 后端 iweb_cloudform/iform_parent/iform_parent/iform_web/src/main/webapp/static/
+
+
+FROM ycr.yonyoucloud.com/base/node:12-alpine
+
+# 变量替换处
+ENV BRUNCH "u8c_daily"
+
+RUN apk update && apk add python make g++ \
+  && mkdir -p /app/source \
+  && cd /app/source \
+  && git clone http://oauth2:y5QEekodGrtxCAkW1djH@git.yonyou.com/yonbuilder/iform_fe.git -b $BRUNCH \
+  && mkdir -pv /app/iform_fe/dist \
+  && cd /app/source/iform_fe \
+
+  && npm config set registry http://10.3.15.79:80/repository/ynpm-all/ \
+  && yarn config set registry http://10.3.15.79:80/repository/ynpm-all/ \
+  && npm config set unsafe-perm true \
+  #&& sed -i "s/yarn install/npm install/g" package.json \
+
+  && yarn build \
+  
+  && cd /app/iform_fe \
+  && mkdir -p hlthchk/yonyoucloud-healthcheck \
+  && cd /app/iform_fe/hlthchk/yonyoucloud-healthcheck\
+  && touch index.html \
+  && echo '<html><head></head><body><h1>Take it easy. Everything goes well!<p id="clock"></p></h1><script>var timerFn=function(){document.getElementById("clock").innerHTML=new Date().toLocaleString();requestAnimationFrame(timerFn)};requestAnimationFrame(timerFn)</script></body></html>' >>index.html \
+  
+  && cp -arf /app/source/iform_fe/dist/*  /app/iform_fe/dist/ \
+  && rm -rf /app/source
+
+RUN mkdir -p /app/source \
+  && cd /app/source \
+  && git clone http://oauth2:y5QEekodGrtxCAkW1djH@git.yonyou.com/yonbuilder/iform_fe.git -b performance \
+  && mkdir -pv /app/iform_fe_alpha/\
+  
+  && cp -arf /app/source/iform_fe/dist/*  /app/iform_fe_alpha/ \
+  && rm -rf /app/source
+
+FROM ycr.yonyoucloud.com/base/tomcat:8-jdk8-alpine
+# 变量替换处
+ENV BRUNCH "u8c_daily"
+
+RUN  mkdir -p /app/source \
+  && cd /app/source \
+  && git clone http://ykj-yyzone-portal:S6Ax7nKQRx61TvTqXUv6EQAt@outergit.yonyou.com:8888/esn_yspybd/iweb_cloudform.git -b $BRUNCH \
+  && mkdir -p /app/iweb_cloudform \
+  && cd /app/source/iweb_cloudform/iform_parent/iform_parent \
+  && apk update \
+  && apk add maven \
+  && mvn clean package -U --global-settings /app/source/iweb_cloudform/settings.xml \
+  && cp -arf /app/source/iweb_cloudform/iform_parent/iform_parent/iform_web/target/iform_web.war /app/iweb_cloudform \
+  
+  && unzip /app/iweb_cloudform/iform_web.war -d   /usr/local/tomcat/webapps/iform_web/ \
+   
+  && rm -rf /app/source
+
+COPY --from=0  /app/iform_fe/hlthchk/   /usr/local/tomcat/webapps/iform_web/
+COPY --from=0  /app/iform_fe/dist/   /usr/local/tomcat/webapps/iform_web/static/
+COPY --from=0  /app/iform_fe_alpha/   /usr/local/tomcat/webapps/iform_web/static/alpha
+
+WORKDIR /usr/local/tomcat
+EXPOSE 8080

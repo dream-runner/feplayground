@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>a{cursor: pointer;}</style>
+</head>
+<body>
+  <div id="bbb"></div>
+  <a href="#bbb">bbb</a>
+  <h1>this is page b</h1>
+<a id="jump">Go to page A</a>
+  <script>
+   document.querySelector('#jump').addEventListener('click', function () {
+     location.replace('a.html')
+   }) 
+  </script>
+</body>
+</html>

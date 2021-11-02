@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="http://test.yyuap.com:58033/hpapaas-passport-be/hpaapp/imgFileUpload" method="POST">
+    <input type="file" id="testFile">
+    <input type="submit" value="submit">
+  </form>
+  <button id="testFile"></button>
+  <script src="../jquery-3.2.1.min.js"></script>
+  <script>
+    document.querySelector('#testFile').addEventListener('click', e => {
+      // var fd = new FormData()
+      // fd.append('file', e.target.files[0])
+      $.ajax({
+        url: 'http://127.0.0.1:58033',
+        type: 'post',
+        processData:false,
+        contentType: 'application/json',
+        data: JSON.stringify({data: 342}),
+        success: function() {alert()}
+      })
+    })
+  </script>
+</body>
+</html>

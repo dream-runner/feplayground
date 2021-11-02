@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="public">
+    <meta http-equiv="Cache-Control" content="max-age=900000">
+    <meta http-equiv="expires" content="Thu, 30 Nov 2017 12:51:28 GMT">
+    <!--<meta http-equiv="Cache-Control" content="no-cache">-->
+    <!--<meta http-equiv="expires" content="Sun, 04 Nov 2001 04:03:06 GMT">-->
+    <title>Title</title>
+    <!-- <script src="effektif.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-1.10.2.js"></script>
+    <script src="spectrum.js"></script>
+    <link rel="stylesheet" href="spectrum.css">
+</head>
+<body>
+<h1>eee</h1>
+<div type='text' id="custom" data-color="rgba(153,227,240,0.5)">aaa</div>
+<script>
+$("#custom").spectrum({
+    // color: "#f00",
+    preferredFormat:'rgb',
+    showAlpha:true,
+    showInput:true,
+    cancelText: "取消",
+    chooseText: "确定",
+});
+</script>
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<script>
+    // setTimeout(function () {
+    //     window.postMessage('this is a message from localhost','http://127.0.0.1/')
+    // },1000)
+    // window.addEventListener('message',function(e){
+    //     debugger;
+    // },false);
+</script>
+</body>
+</html>

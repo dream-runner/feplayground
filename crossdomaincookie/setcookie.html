@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <img src="http://www.b.com/crossdomaincookie/setcookie.php"/> -->
+  <script src="../jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <script>
+  $.ajax({
+    type: 'post',
+    url: 'http://www.b.com/crossdomaincookie/setcookie.php',
+    contentType: 'application/json',
+    data: JSON.stringify({})
+  })
+  </script>
+  
+</body>
+</html>

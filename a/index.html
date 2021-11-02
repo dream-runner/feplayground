@@ -1,0 +1,59 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-09-24 09:27:06
+ * @LastEditTime: 2021-11-01 15:13:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/a/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://test.diwork.com/css/">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .parent{
+      display: flex;
+      font-size: 0;
+    }
+    .child{
+      flex: 1;
+      display: inline-block;
+      /* width: 33.3%; */
+      padding-bottom: 33.3%;
+      font-size: 0;
+    }
+    .child:nth-child(1) {
+      background-color: aqua;
+    }
+    .child:nth-child(2) {
+      background-color: lightcoral;
+    }
+    .child:nth-child(3) {
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  hello gorgeous！
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+  <a href="./index.js" download="js文件.js">a</a>
+  <svg style=' border:1px solid blue;width:300px;height:300px;'>
+      <!-- <path d='M0,150 300,150  M150,0 L150,300 ' fill='none' stroke='green'/> -->
+      <text fill='red' x='150' y='150' 
+      style='text-anchor:middle;'>
+          中文内容,中文内容
+      </text>
+  </svg>
+</body>
+</html>

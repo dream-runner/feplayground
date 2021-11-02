@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="spectrum.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="spectrum.css"/>
+	</head>
+	<body>
+		<div data-color="#f00" style="padding: 5px;background: #f00;"></div>
+		<script type="text/javascript">
+			$("[data-color]").spectrum({
+				    showInput: true,
+				    
+				    showPaletteOnly: true,
+				    togglePaletteOnly: true,
+				    clickoutFiresChange:true,
+				    togglePaletteMoreText: '高级',
+				    
+				    preferredFormat:'hex',
+				    
+					cancelText: "取消",
+					chooseText: "确定",
+				});
+		</script>
+	</body>
+</html>

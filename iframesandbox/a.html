@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function parentFn () {
+      console.error('parentFn called!')
+    }
+    document.domain = 'b.com'
+    document.domain = document.domain
+  </script>
+  <!-- <iframe src="https://sub2.b.com/iframesandbox/b.html" sandbox="allow-forms allow-scripts allow-same-origin" width="500" height="500" frameborder="0"></iframe> -->
+  <iframe src="https://sub2.b.com:3333/iframesandbox/b.html" width="500" height="500" frameborder="0"></iframe>
+  <!-- <iframe src="https://static.diwork.com/2837107/102462/202101/12/1610452582I2VM.pdf" sandbox="allow-plugins allow-forms allow-scripts allow-same-origin" width="500" height="500" frameborder="0"></iframe> -->
+</body>
+</html>

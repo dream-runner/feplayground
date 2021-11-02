@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		// 加签 改派参照UI
+function initRefUI(name, pk_workflownote, actionCode, callback) {
+    $("#" + name).each(
+        function () {
+            var $that = $(this);
+            var refcont = $('#refContainer' + name);
+            if (refcont && refcont.length > 0) {
+                refcont.each(function () {
+                    refcont.data('uui.refer', '');
+                });
+            }
+            var options = {
+                refInput: $that,
+                refModelUrl: '/iform_web/bpmuserref/',
+                isPOPMode: true,
+                contentId: 'refContainer' + name,
+                dom: $that,
+                pageUrl: '/iform_web/static/js/ref/refDList.js',
+                setVal: function (data) {
+                    if (data) {
+                        var users = [];
+                        if (data && data.length > 0) {
+                            //	$that.find("input").length==0?$that.val(data[0].refname):$that.find("input").val(data[0].refname);
+                            //	$that.data('refpk', data[0].refpk)
+
+                            var _refName = '', _refPk = [];
+                            $.each(data, function (index, _data) {
+                                if (_data.refname && _data.refpk) {
+                                    _refName += _data.refname + ',';
+                                    _refPk.push(_data.refpk);
+                                }
+                            });
+                            _refName = _refName.substring(0, _refName.length - 1);
+                            $that.find("input").length == 0 ? $that.val(_refName) : $that.find("input").val(_refName);
+                            $that.data('refpk', _refPk);
+                        }
+
+                        $('#refContainer' + name).Refer('hide');
+
+                        if (actionCode == 'addCopyTo') {
+                            var usersTpl = renderUserAvatar(data);
+                            $('[data-action="addCopyTo"] .node-user-group').html(usersTpl)
+                        }
+
+                        callback && callback(data);
+                    }
+
+                },
+                onOk: function (data) {
+                    this.setVal(data);
+                    $('#refContainer' + name).Refer('hide');
+                },
+                onCancel: function () {
+                    initButtonStatus();
+                    $('#refContainer' + name).Refer('hide');
+                }
+            };
+
+            var pageURL = options.pageUrl;
+            var refInitFunc = pageURL.substr(pageURL.lastIndexOf('/') + 1).replace('.js', '');
+
+            if (!window[refInitFunc]) {
+                var scriptStr = '';
+                $.ajax({
+                    url: pageURL,
+                    dataType: 'script',
+                    async: false,
+                    success: function (data) {
+                        scriptStr = data
+                    }
+                })
+                eval(scriptStr);
+            }
+
+            window[refInitFunc](options);
+
+            if (isMobile) {
+                u.compMgr.dataAdapters.uiRefer.prototype.initialize(options);
+            }
+            $that.off('blur.refer');
+
+        });
+
+    $('body').on('click', '.refer_btn .btn-cancel', function () {
+        initButtonStatus();
+
+    });
+}
+	</body>
+</html>
