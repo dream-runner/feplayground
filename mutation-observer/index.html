@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #code_edit{
+      height: 500px;
+      border: 1px solid lightblue;
+    }
+    div{
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    id=root
+    <div id="inner">
+      id=inner
+    </div>
+  </div>
+  <div id="code_edit" contenteditable="true">
+    document.getElementById('root').appendChild(document.createElement('div'))
+  </div>
+  <button id="trigger">click me</button>
+  <script>
+    const observer = new MutationObserver(function (e) {
+      console.error(e)
+    })
+    const dom2Observe = document.getElementById('root')
+    observer.observe(dom2Observe, {
+      subtree: false,
+      childList: true,
+      // attributes: false
+    })
+    document.getElementById('trigger').addEventListener('click', e => {
+      eval(document.getElementById('code_edit').innerHTML)
+    })
+  </script>
+</body>
+</html>

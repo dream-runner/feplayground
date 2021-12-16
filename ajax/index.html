@@ -1,0 +1,29 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-09 16:45:47
+ * @LastEditTime: 2021-11-09 16:47:39
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /handwritingboard/Users/yangjz0/workspace/phpweb/ajax/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <script>
+    $.ajax({
+      url: '/ngReturn',
+      async: false,
+      complete () {
+        console.error('>>>comp')
+      }
+    })
+    console.error('>>>')
+  </script>
+</body>
+</html>

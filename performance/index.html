@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-24 08:45:49
- * @LastEditTime: 2021-08-28 13:52:18
+ * @LastEditTime: 2021-11-11 00:18:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/performance/index.html
@@ -9,26 +9,15 @@
 <html>
   <head>
   <meta charset="UTF-8">
+  <!-- <script src="./esprima.js"></script>
+  <script src="./acorn.js"></script> -->
+  <script src="./beautify.js"></script>
 </head>
 <body>
-<button id="createBtn">增加节点</button>
-<script> 
-function runSomething() {
-  let fn = `try {} catch (e) {}`.repeat(10000)
-  // window.a = 
-  // new Function(fn)()
-  eval(fn)
-  // let i = 1000
-  // while (i--) {
-  //   try {
-      
-  //   } catch (error) {
-      
-  //   }
-  // }
-  // !!function () { var str = `${Math.random().toString(36).repeat(1000)}`}()
-}  
-document.getElementById('createBtn').addEventListener('click', runSomething);
-</script>
+<button id="createBtn">function call via string</button>
+<button id="create_big_var">create_big_var</button>
+<button id="gc">gc</button>
+<button id="arr_join"> arr join</button>
+<script src="./index.js"></script>
 </body>
 </html>
