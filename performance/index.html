@@ -1,23 +1,18 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-24 08:45:49
- * @LastEditTime: 2021-11-11 00:18:56
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/performance/index.html
--->
+<!Doctype html>
 <html>
   <head>
   <meta charset="UTF-8">
-  <!-- <script src="./esprima.js"></script>
-  <script src="./acorn.js"></script> -->
-  <script src="./beautify.js"></script>
+  <link rel="stylesheet" href="./notTooUgly.css">
 </head>
 <body>
-<button id="createBtn">function call via string</button>
-<button id="create_big_var">create_big_var</button>
-<button id="gc">gc</button>
-<button id="arr_join"> arr join</button>
-<script src="./index.js"></script>
+  <button>function call via string</button>
+  <button>parse via JSON.parse</button>
+  <button>parse via new Function</button>
+  <button>JSON.stringify</button>
+  <button>involke with param</button>
+
+  <iframe src="./frame.html" frameborder="0"></iframe>
+  <script src="./bigJson.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
