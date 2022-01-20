@@ -17,7 +17,6 @@ const functions = [
   },
   // JSON.parse
   function parseViaJson () {
-    window.objFromJson = JSON.parse(jsonStr)
     return JSON.parse(jsonStr)
   },
   // new Function
@@ -25,12 +24,19 @@ const functions = [
     return new Function(`return (${jsonStr})`)()
   },
   function stringify () {
-    // window.objFromJson.ver = + new Date()
     const str = JSON.stringify(jsonStr)
-    postMessage(str, '*')
+    // postMessage(str, '*')
   },
   function involkeWithParam () {
     f1(jsonStr)
+  },
+  function createMassiveDom () {
+    let nodeCount = 10000
+    const div = document.createElement('div')
+    while (nodeCount--) {
+      div.appendChild(document.createElement('span'))
+    }
+    document.body.appendChild(div)
   }
 ]
 
@@ -38,21 +44,22 @@ const btns = document.querySelectorAll('button')
 btns.forEach((btn, index) => {
   btn.onclick = functions[index]
 })
-!!function () {
-  window.addEventListener('message', (event) => {
-    let data = event.data;
-    if (!data) {
-      return;
-    }
-    try {
-      if (typeof data === 'string') {
-        data = JSON.parse(data);
-        if (data.deletePageNidArr && Array.isArray(data.deletePageNidArr) && data.deletePageNidArr.length > 0) {
-          this.deletePageNidArr = data.deletePageNidArr;
-        }
-      }
-    } catch (e) {
-      console.error("addEventListener message",e);
-    }
-  })
-}()
+// !!function () {
+//   window.addEventListener('message', (event) => {
+//     let data = event.data;
+//     if (!data) {
+//       return;
+//     }
+//     try {
+//       if (typeof data === 'string') {
+//         data = JSON.parse(data);
+//         if (data.deletePageNidArr && Array.isArray(data.deletePageNidArr) && data.deletePageNidArr.length > 0) {
+//           this.deletePageNidArr = data.deletePageNidArr;
+//         }
+//       }
+//     } catch (e) {
+//       console.error("addEventListener message",e);
+//     }
+//   })
+// }()
+window.objFromJson = functions[1]()

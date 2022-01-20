@@ -1,0 +1,66 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-14 13:48:48
+ * @LastEditTime: 2021-10-21 14:47:35
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /iform_fe/Users/yangjz0/workspace/phpweb/a/script-order/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="preload" href="./2.js" as="script"> -->
+  <link rel="stylesheet" href="./index.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script src="https://yb.diwork.com/iform_web/s/tpl"></script> -->
+
+  <script>
+    window.addEventListener('DOMContentLoaded', e => {
+      console.error('>>>> DOMContentLoaded')
+    })
+  </script>
+
+  <!-- async -->
+  <!-- <script async src="main.js"></script>
+  <script async src="vendors"></script> -->
+
+  <!-- defer -->
+  <!-- <script defer src="main.js"></script>
+  <script defer src="vendors"></script> -->
+
+  <!-- default --> 
+  <!-- <script src="main.js"></script>
+  <script src="vendors.js"></script> -->
+  
+  <!-- <script src="./1.js"></script>
+  <script src="./2.js"></script> -->
+  <script src="./2.js"></script>
+  <img src="large.jpg" alt="" srcset="">
+  <script>
+    console.error('>>>> SCRIPT AFTER SCRIPTS')
+  </script>
+  <!-- <script>
+    const deps = [
+      './1.js',
+      './2.js'
+    ]
+    const frag = document.createDocumentFragment()
+    deps.forEach(dep => {
+      const script = document.createElement('script')
+      script.src = dep
+      script.async = false
+      alert(script.defer)
+      frag.appendChild(script)
+    })
+    document.body.appendChild(frag)
+    function onFrameLoaded () {
+      // alert()
+    }
+  </script>
+  <iframe src="./ifr.html" onload="onFrameLoaded()" frameborder="0"></iframe> -->
+</body>
+</html>
