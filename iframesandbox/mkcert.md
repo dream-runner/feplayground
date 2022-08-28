@@ -6,4 +6,6 @@
  * @Description: In User Settings Edit
  * @FilePath: /iweb_cloudform/Users/yangjz0/workspace/phpweb/iframesandbox/mkcert.md
 -->
+add cert to system
+mkcert -install
 mkcert --cert-file localhost.crt --key-file localhost.key a.com b.com localhost 10.6.221.60 127.0.0.1 "*.a.com" "*.b.com" "*.yyuap.com" "*.diwork.com"

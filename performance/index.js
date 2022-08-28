@@ -17,7 +17,6 @@ const functions = [
   },
   // JSON.parse
   function parseViaJson () {
-    window.objFromJson = JSON.parse(jsonStr)
     return JSON.parse(jsonStr)
   },
   // new Function
@@ -25,9 +24,12 @@ const functions = [
     return new Function(`return (${jsonStr})`)()
   },
   function stringify () {
-    // window.objFromJson.ver = + new Date()
-    const str = JSON.stringify(jsonStr)
-    postMessage(str, '*')
+    const str = JSON.stringify(objFromJson)
+    // postMessage(str, '*')
+    let count = 5000
+    while (count--) {
+      window.count = count
+    }
   },
   function involkeWithParam () {
     f1(jsonStr)
@@ -56,3 +58,4 @@ btns.forEach((btn, index) => {
     }
   })
 }()
+window.objFromJson = functions[1]()
