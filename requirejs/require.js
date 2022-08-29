@@ -7,7 +7,7 @@
 /*jslint regexp: true, nomen: true, sloppy: true */
 /*global window, navigator, document, importScripts, setTimeout, opera */
 
-var requirejs, require, define;
+var requirejs, require, $define;
 (function (global, setTimeout) {
     var req, s, head, baseElement, dataMain, src,
         interactiveScript, currentlyAddingScript, mainScript, subPath,
@@ -2058,7 +2058,7 @@ var requirejs, require, define;
      * return a value to define the module corresponding to the first argument's
      * name.
      */
-    define = function (name, deps, callback) {
+    $define = function (name, deps, callback) {
         var node, context;
 
         //Allow for anonymous modules
@@ -2125,7 +2125,7 @@ var requirejs, require, define;
         }
     };
 
-    define.amd = {
+    $define.amd = {
         jQuery: true
     };
 

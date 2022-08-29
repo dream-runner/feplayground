@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper > div {
+      width: 50%;
+      float: left;
+    }
+    pre {
+      background: black;
+      color: white;
+      margin-right: 20px;
+    }
+    input, button{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+  </div>
+  <input type="number" id="amount" value="10000"/>
+  <button id="run">
+    start
+  </button>
+  <button id="analyze">
+    analyze
+  </button>
+  <script>
+    let enormousArray
+    const algs = {
+      forEach () {
+        console.error('Now running: ', arguments.callee.name)
+        enormousArray.forEach(item => {
+          item++
+          console.log(item)
+        })
+      },
+      forOf () {
+        console.error('Now running: ', arguments.callee.name)
+        for (let item of enormousArray) {
+          item++
+          console.log(item)
+        }
+      },
+      while () {
+        console.error('Now running: ', arguments.callee.name)
+        let index = enormousArray.length
+        while (index--) {
+          enormousArray[index]++
+          console.log(enormousArray[index])
+        }
+      },
+      for () {
+        console.error('Now running: ', arguments.callee.name)
+        let index = enormousArray.length
+        for (; index; index--) {
+          enormousArray[index - 1]++
+          console.log(enormousArray[index - 1])
+        }
+      }
+    }
+    const frag = document.createDocumentFragment()
+    for (let key in algs) {
+      const alg = algs[key]
+      const piece = document.createElement('div')
+      piece.innerHTML = `
+      <div class="col">
+        <pre>
+          ${alg}
+        </pre>
+        <input type="radio" name="alg" id="${key}">
+      </div>
+      `
+      frag.appendChild(piece)
+    }
+    document.querySelector('.wrapper').appendChild(frag)
+    document.getElementById('analyze').addEventListener('click', e =>  {
+      console.error(performance.getEntriesByName('analyze').at(-1))
+    })
+    const setEnormousArray = () => {
+      const numInput = document.getElementById('amount')
+      const limit = numInput.value - 0
+      enormousArray = new Array(limit).fill('').map(v => Math.random() * 100 | 0)
+    }
+    setEnormousArray()
+    document.getElementById('amount').addEventListener('change', setEnormousArray)
+    document.getElementById('run').addEventListener('click', e => {
+      const alg = document.querySelector('input[type="radio"]:checked').getAttribute('id')
+      performance.mark('beforeAlgRun')
+      algs[alg]()
+      performance.mark('afterAlgRun')
+      performance.measure('analyze', 'beforeAlgRun', 'afterAlgRun')
+      console.error('done!!!')
+    })
+  </script>
+</body>
+</html>

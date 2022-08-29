@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function loadScript (src) {
+      const scriptTag = document.createElement('script')
+      scriptTag.src = src  
+      document.head.appendChild(scriptTag)
+    }
+  </script>
+  <script>
+    (async  () => {
+      console.error('ready2load script')
+      loadScript('./asyncScript')
+      await new Promise(resolve => setTimeout(resolve, 0))
+      console.error(' scriptloadInvoked')
+    })()
+  </script>
+</body>
+</html>

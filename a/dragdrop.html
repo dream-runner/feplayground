@@ -45,13 +45,11 @@
   </div>
   <p class="draggable" draggable="true">drag me</p>
   <a href="">shit</a>
-  <img src="https://cdn.yonyoucloud.com/dev/apcenter/img/logo/BIPlogo.png" alt="">
   <script>
     document.querySelector('p').addEventListener('dragstart', function (ev) {
       ev.dataTransfer.effectAllowed = "move";
       // ev.dataTransfer.setData("text", 'shit');
       ev.dataTransfer.setDragImage(document.querySelector('a'), 0, 0);
-      // ev.dataTransfer.setDragImage('https://cdn.yonyoucloud.com/dev/apcenter/img/logo/BIPlogo.png', 0, 0);
       eleDrag = ev.target;
       return true;
     })
