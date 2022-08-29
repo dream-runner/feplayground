@@ -1,0 +1,36 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-07 10:35:19
+ * @LastEditTime: 2022-01-07 10:35:40
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /yonbuilder-mdf-extend/Users/yangjz0/workspace/phpweb/script-order/mix.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.addEventListener('DOMContentLoaded', e => {
+      console.error('>>>> DOMContentLoaded')
+    })
+  </script>
+  <script src="./1.js"></script>
+  <script src="./2.js"></script>
+</head>
+<body>
+  <h1>
+    script标签都在head中：
+    无论是否async，各个script并行加载
+    async时谁先加载完谁执行且不阻塞图片加载，非async按顺序执行且阻塞图片加载
+
+  </h1>
+  <img src="large.jpg" alt="" srcset="">
+  <script src="./3.js"></script>
+  <script>
+    console.error('>>>> SCRIPT AFTER SCRIPTS')
+  </script>
+</body>
+</html>

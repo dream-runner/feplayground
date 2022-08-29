@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.5",
+    "css-loader": "^6.7.1",
+    "koa": "^2.13.4",
+    "less-loader": "^10.2.0",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "antd-mobile": "^5.21.0",
+    "arc-ui": "^1.0.7",
+    "koa-bodyparser": "^4.3.0",
+    "koa-static": "^5.0.0",
+    "lodash-es": "^4.17.21",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "mid": " rm -rf ./mid/* && node ./compSplit.js",
+    "serve": "nodemon ./server/index.js",
+    "lib": "webpack -w --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.config.js"
+  }
+}
