@@ -1,0 +1,1 @@
+open -a "Google Chrome" "http://localhost:3000/" --args --js-flags="--expose-gc"

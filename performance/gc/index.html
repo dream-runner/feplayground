@@ -7,11 +7,13 @@
   <title>Document</title>
 </head>
 
+<!-- open -a "Google Chrome" "http://localhost/feplayground/performance/gc/index.html" --args --js-flags="--expose-gc" -->
 <body>
   <h1 id="viewport">
     memoUesd: <span id="memo_monitor"></span> M
     <p id="sts">running...</p>
   </h1>
+  
   <button id="btn_run">run</button>  
   <button id="btn_gc">gc</button>
   <script>
@@ -20,9 +22,9 @@
       const btnRun = document.getElementById('btn_run')
       const btnGC = document.getElementById('btn_gc')
       const sts = document.getElementById('sts')
-      const scale = 100 * Math.pow(1024, 2)
-
+      
       await new Promise(resolve => setTimeout(resolve, 0))
+      const scale = 50 * Math.pow(1024, 2)
       const seed = new Array(scale).fill(' ').join('')
       function run () {
         sts.innerHTML = 'running...'
