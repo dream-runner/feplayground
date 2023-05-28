@@ -1,11 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
-import { Tabs, Button, Divider, Row, Col } from 'antd'
+import { Fragment, useCallback, useEffect, useState } from "react";
+import { Button, Divider, Row, Col, Space } from 'antd'
 
 const genLongStr = scale => new Array(scale).fill(' ').join('')
-const scale = 50 * Math.pow(1024, 2)
+const scale = 20 * Math.pow(1024, 2)
 const seed = genLongStr(scale)
 const precision = 2
-
 
 function DashBoard () {
   const [memoUsed, setMemoUsed] = useState([])
@@ -30,29 +29,42 @@ function DashBoard () {
 
 const print = console.error
 
+class RootStore {
+  constructor(txt) {
+    this.txt = txt
+    this.form = new FormStore(this)
+  }
+}
+
+class FormStore {
+  constructor(rootStore) {
+    this.rootStore = rootStore
+  }
+}
+
 export default function App () {
-  const [tabs, setTabs] = useState([])
-  const [activeTab, setActiveTab] = useState('')
-  const addPanel = async () => {
-    const content = `tab${tabs.length + 1}`.concat(seed)
+  const [elements, setElements] = useState([])
+  const addElement = async () => {
+    const content = `${Math.random().toString(20).substring(2)}`.concat(seed)
+    const rootStore = new RootStore(content)
     await new Promise(resolve => setTimeout(resolve, 0))
-    const newTabKey = `tab${tabs.length + 1}`
-    tabs.push({
-      key: newTabKey,
-      label: newTabKey,
+    const newElementKey = `${elements.length + 1}`
+    elements.push({
+      key: newElementKey,
+      label: newElementKey,
       children: (
       <>
-        <Button onClick={() => print(content)}>Print</Button>
+        {rootStore.txt[0]}
+        <Button onClick={() => print(rootStore.txt)}>Print</Button>
       </>
       )
     })
-    setTabs([...tabs])
-    setActiveTab(newTabKey)
+    setElements([...elements])
   }
 
-  const removePanel = () => {
-    tabs.pop()
-    setTabs([...tabs])
+  const removeElement = () => {
+    elements.pop()
+    setElements([...elements])
   }
 
  const gc = () => {
@@ -70,10 +82,10 @@ export default function App () {
       <Divider orientation="left"></Divider>
       <Row>
         <Col span={6} offset={2}>
-        <Button onClick={addPanel} type="primary" danger>Add Panel</Button>
+        <Button onClick={addElement} type="primary" danger>Add Element</Button>
         </Col>
         <Col span={6} offset={2}>
-        <Button onClick={removePanel} type="primary">Remove Panel</Button>
+        <Button onClick={removeElement} type="primary">Remove Element</Button>
         </Col>
         <Col span={6} offset={2}>
         <Button onClick={gc} type="primary">Garbage Collection</Button>
@@ -82,7 +94,13 @@ export default function App () {
       <Divider orientation="left"></Divider>
       <Row>
         <Col span={24} offset={1}>
-          <Tabs activeKey={activeTab} defaultActiveKey="tab0" items={tabs} onChange={setActiveTab}></Tabs>
+          <Space direction="horizontal" size='middle'>
+            {elements.map(el => {
+              return (
+                <Fragment key={el.key}>{el.children}</Fragment>
+              )
+            })}
+          </Space>
         </Col>
       </Row>
     </div>

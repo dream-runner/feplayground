@@ -7,44 +7,77 @@
   <title>Document</title>
 </head>
 
-<!-- open -a "Google Chrome" "http://localhost/feplayground/performance/gc/index.html" --args --js-flags="--expose-gc" -->
+<!-- open -a "Google Chrome" "https://localhost/feplayground/performance/gc/index.html" --args --js-flags="--expose-gc" -->
 <body>
   <h1 id="viewport">
     memoUesd: <span id="memo_monitor"></span> M
     <p id="sts">running...</p>
   </h1>
   
-  <button id="btn_run">run</button>  
+  <button id="add_element">add element</button>  
+  <button id="remove_element">remove element</button>  
   <button id="btn_gc">gc</button>
+  <div id="tab_container">
+
+  </div>
   <script>
+    class RootStore {
+      constructor(txt) {
+        this.txt = txt
+        this.form = new FormStore(this)
+      }
+    }
+
+    class FormStore {
+      constructor(rootStore) {
+        this.rootStore = rootStore
+      }
+    }
+
     (async () => {
       window.memHolder = []
-      const btnRun = document.getElementById('btn_run')
+      const btnAddElement = document.getElementById('add_element')
+      const btnRemoveElement = document.getElementById('remove_element')
       const btnGC = document.getElementById('btn_gc')
       const sts = document.getElementById('sts')
+      const tabContainer = document.getElementById('tab_container')
       
       await new Promise(resolve => setTimeout(resolve, 0))
-      const scale = 50 * Math.pow(1024, 2)
+      const scale = 10 * Math.pow(1024, 2)
       const seed = new Array(scale).fill(' ').join('')
-      function run () {
+
+      function removeElement () {
+        tabContainer.removeChild(tabContainer.lastChild)
+        memHolder.pop()
+      }
+
+      function addElement () {
         sts.innerHTML = 'running...'
         setTimeout(() => {
           const maxiveContent = seed.concat(' ')
-          // window.memHolder.push(maxiveContent)
-          console.log(maxiveContent)
+          const rootStore = new RootStore(maxiveContent)
+          memHolder.push(rootStore)
           sts.innerHTML = 'Noting running'
+          const newBtn = document.createElement('button')
+          newBtn.innerText = 'Button'
+          newBtn.onclick = function() {
+            console.error(rootStore.txt)
+            return maxiveContent
+          }
+          tabContainer.appendChild(newBtn)
         }, 0)
       }
   
       function monitor () {
         const memoUsed = window.performance.memory.usedJSHeapSize
         const memoOutput = document.querySelector('#memo_monitor')
-        memoOutput.innerHTML = parseInt(memoUsed / Math.pow(2, 20))
+        memoOutput.innerHTML = parseInt(memoUsed / Math.pow(2, 20)).toFixed(2)
         requestAnimationFrame(monitor)
       }
       requestAnimationFrame(monitor)
   
-      btnRun.addEventListener('click', run)
+      btnAddElement.addEventListener('click', addElement)
+      btnRemoveElement.addEventListener('click', removeElement)
       btnGC.addEventListener('click', window.gc)
       sts.innerHTML = 'Noting running'
     })()

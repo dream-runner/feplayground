@@ -7,7 +7,6 @@
     "@svgr/webpack": "4.3.3",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
-    "arc-ui": "^1.0.6",
     "babel-eslint": "10.1.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.1.0",
@@ -36,6 +35,9 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "mini-css-extract-plugin": "0.9.0",
+    "mobx": "^6.9.0",
+    "mobx-react": "^7.6.0",
+    "mobx-react-lite": "^3.4.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -66,6 +68,8 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-block-scoping": "^7.12.12",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
     "@loadable/component": "^5.13.2",
     "babel-import-plugin": "^1.0.0",
     "babel-plugin-import": "^1.13.3"

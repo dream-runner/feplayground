@@ -9,21 +9,21 @@
 module.exports = {
   presets: [
     [
-      '@babel/env',
+      '@babel/preset-env',
       {
-        targets: {
-          chrome: '20'
-        },
         useBuiltIns: 'usage',
-        // corejs: '2'
+        // // useBuiltIns: 'entry',
+        corejs: '3'
       }
     ],
-    '@babel/preset-react'
+    '@babel/preset-react',
+    '@babel/preset-stage-3',
+    '@babel/preset-typescript'
   ],
   plugins: [
     // "transform-es2015-modules-commonjs",
-      // ['@babel/plugin-transform-runtime', {
-      // }]
+      ['@babel/plugin-transform-runtime', {
+      }]
     // [
     //   {
     //     corejs: '3'
@@ -32,21 +32,3 @@ module.exports = {
     // 'transform-es2015-modules-commonjs'
   ]
 }
-
-// const presets = [
-//   [
-//     "@babel/env",
-//     {
-//       targets: {
-//         edge: "17",
-//         firefox: "60",
-//         chrome: "67",
-//         safari: "11.1",
-//       },
-//       useBuiltIns: "usage",
-//       "corejs": "3.6.4",
-//     },
-//   ],
-// ];
-
-// module.exports = { presets };

@@ -1,0 +1,450 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "my-app",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "@babel/core": "7.9.0",
+        "@svgr/webpack": "4.3.3",
+        "@typescript-eslint/eslint-plugin": "^2.10.0",
+        "@typescript-eslint/parser": "^2.10.0",
+        "arc-ui": "^1.0.6",
+        "babel-eslint": "10.1.0",
+        "babel-jest": "^24.9.0",
+        "babel-loader": "8.1.0",
+        "babel-plugin-named-asset-import": "^0.3.6",
+        "babel-preset-react-app": "^9.1.2",
+        "camelcase": "^5.3.1",
+        "case-sensitive-paths-webpack-plugin": "2.3.0",
+        "css-loader": "3.4.2",
+        "dotenv": "8.2.0",
+        "dotenv-expand": "5.1.0",
+        "eslint": "^6.6.0",
+        "eslint-config-react-app": "^5.2.1",
+        "eslint-loader": "3.0.3",
+        "eslint-plugin-flowtype": "4.6.0",
+        "eslint-plugin-import": "2.20.1",
+        "eslint-plugin-jsx-a11y": "6.2.3",
+        "eslint-plugin-react": "7.19.0",
+        "eslint-plugin-react-hooks": "^1.6.1",
+        "file-loader": "4.3.0",
+        "fs-extra": "^8.1.0",
+        "html-webpack-plugin": "4.0.0-beta.11",
+        "identity-obj-proxy": "3.0.0",
+        "immutable": "^4.0.0",
+        "jest": "24.9.0",
+        "jest-environment-jsdom-fourteen": "1.0.1",
+        "jest-resolve": "24.9.0",
+        "jest-watch-typeahead": "0.4.2",
+        "mini-css-extract-plugin": "0.9.0",
+        "optimize-css-assets-webpack-plugin": "5.0.3",
+        "pnp-webpack-plugin": "1.6.4",
+        "postcss-flexbugs-fixes": "4.1.0",
+        "postcss-loader": "3.0.0",
+        "postcss-normalize": "8.0.1",
+        "postcss-preset-env": "6.7.0",
+        "postcss-safe-parser": "4.0.1",
+        "react": "^17.0.2",
+        "react-app-polyfill": "^1.0.6",
+        "react-dev-utils": "^10.2.1",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.2",
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "resolve": "1.15.0",
+        "resolve-url-loader": "3.1.2",
+        "sass-loader": "8.0.2",
+        "semver": "6.3.0",
+        "style-loader": "0.23.1",
+        "terser-webpack-plugin": "2.3.8",
+        "ts-pnp": "1.1.6",
+        "url-loader": "2.3.0",
+        "webpack": "4.42.0",
+        "webpack-dev-server": "3.11.0",
+        "webpack-manifest-plugin": "2.2.0",
+        "workbox-webpack-plugin": "4.3.1"
+      },
+      "devDependencies": {
+        "@babel/plugin-transform-block-scoping": "^7.12.12",
+        "@loadable/component": "^5.13.2",
+        "babel-import-plugin": "^1.0.0",
+        "babel-plugin-import": "^1.13.3"
+      },
+      "scripts": {
+        "start": "node scripts/start.js",
+        "build": "node scripts/build.js",
+        "test": "node scripts/test.js --env=jsdom"
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      },
+      "jest": {
+        "roots": [
+          "<rootDir>/src"
+        ],
+        "collectCoverageFrom": [
+          "src/**/*.{js,jsx,ts,tsx}",
+          "!src/**/*.d.ts"
+        ],
+        "setupFiles": [
+          "react-app-polyfill/jsdom"
+        ],
+        "setupFilesAfterEnv": [],
+        "testMatch": [
+          "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+          "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+        ],
+        "testEnvironment": "jest-environment-jsdom-fourteen",
+        "transform": {
+          "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+          "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+          "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+        },
+        "transformIgnorePatterns": [
+          "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+          "^.+\\.module\\.(css|sass|scss)$"
+        ],
+        "modulePaths": [],
+        "moduleNameMapper": {
+          "^react-native$": "react-native-web",
+          "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+        },
+        "moduleFileExtensions": [
+          "web.js",
+          "js",
+          "web.ts",
+          "ts",
+          "web.tsx",
+          "tsx",
+          "json",
+          "web.jsx",
+          "jsx",
+          "node"
+        ],
+        "watchPlugins": [
+          "jest-watch-typeahead/filename",
+          "jest-watch-typeahead/testname"
+        ]
+      },
+      "babel": {
+        "presets": [
+          "react-app"
+        ]
+      },
+      "eslintConfig": {
+        "extends": "react-app"
+      }
+    },
+    "prefix": "/Users/workspace/fe/feplayground/cra"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/xiaxia/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/workspace/fe/feplayground/cra/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/workspace/fe/feplayground/cra",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-loader/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-loader",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/core",
+      "rawSpec": "7.9.0"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.9.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.18.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/plugin-transform-block-scoping",
+      "rawSpec": "^7.12.12"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.18.9",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.18.9",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "found_in_store"
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@svgr/webpack/4.3.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@svgr/webpack",
+      "rawSpec": "4.3.3"
+    }
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/4.3.3",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-import-plugin/1.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-import-plugin",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "14 debug pnpm:deprecation": {
+    "deprecated": "demo",
+    "depth": 0,
+    "pkgId": "registry.npmjs.org/babel-import-plugin/1.0.0",
+    "pkgName": "babel-import-plugin",
+    "pkgVersion": "1.0.0",
+    "prefix": "/Users/workspace/fe/feplayground/cra"
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-import-plugin/1.0.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@loadable/component/5.15.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@loadable/component",
+      "rawSpec": "^5.13.2"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@loadable/component/5.15.2",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@loadable/component/5.15.2",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-plugin-named-asset-import",
+      "rawSpec": "^0.3.6"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "case-sensitive-paths-webpack-plugin",
+      "rawSpec": "2.3.0"
+    }
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "23 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/core/7.9.0",
+    "size": 34371,
+    "status": "started"
+  },
+  "24 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "size": 12927,
+    "status": "started"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-import/1.13.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-plugin-import",
+      "rawSpec": "^1.13.3"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-import/1.13.5",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "27 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/babel-import-plugin/1.0.0",
+    "size": 1317,
+    "status": "started"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-import/1.13.5",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "found_in_store"
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-import-plugin/1.0.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "fetched"
+  },
+  "30 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@svgr/webpack/4.3.3",
+    "size": 4197,
+    "status": "started"
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/4.3.3",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "fetched"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "fetched"
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "dotenv-expand",
+      "rawSpec": "5.1.0"
+    }
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "requester": "/Users/workspace/fe/feplayground/cra",
+    "status": "resolved"
+  },
+  "35 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION",
+    "packageMeta": {
+      "name": "arc-ui",
+      "dist-tags": {
+        "latest": "3.0.6"
+      },
+      "versions": {
+        "3.0.0": {
+          "name": "arc-ui",
+          "version": "3.0.0",
+          "dependencies": {
+            "react-inlinesvg": "^3.0.0"
+          },
+          "devDependencies": {
+            "@storybook/addons": "^6.4.22",
+            "@storybook/theming": "^6.4.22"
+          },
+          "dist": {
+            "integrity": "sha512-z8WyMJWHFLX6/X15mJGmh+WYM6L+Frca1UEVuXSDOQUOTy54EM4LBmYFZW470At50SXrnQHZu0UrY4qSY+jKVg==",
+            "shasum": "83595fe863ae4f6f7ef886721d3877bd51f5e5d8",
+            "tarball": "https://registry.npmjs.org/arc-ui/-/arc-ui-3.0.0.tgz",
+            "fileCount": 211,
+            "unpackedSize": 4065087,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIGqgvqngba3MUmXlMI/U+tN4wKzwxjYkojULIE4uWgp0AiEA2dOH5c+NlPhSo1jNsbjcGhMvM5IG90sy2urVK1PnLiE="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJii1w2ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmquBg/8ClMFQCx+LcpDozSX+TtF4g6dwAIbM+mvkae8PMrXHLaSyWHB\r\nfQeaGWt58oCI02/Ih5svgmR/ap8hKcyEnghdAJvyGYT7r5MhUpXInoVVE4Uh\r\ndgAlVILek+QlBLag1SWcI809Q6kjjSc5TkZk30fcMe/wTz7gALxux5eB2i2y\r\nvTqn1x5NKqmB8S5AnJrZ2tnFnrMN/MNPtBZ3HF4pHQkkONUKVZ3UFwQrpVxI\r\nnZjtLS2g+ReysdaMEnnu3IlIyUZKMlxnY2/K07qEUMBZ7lF+YgAUslan32pS\r\ng0bOAzCTDY9wEvHUdKTy99hvToPBiXB51+yOpxxew7o7Cx694ONZqaDZoaut\r\nYpsjoC6p4YsW3G1ei2KvWiCRqakJ9qtj0NtoBu7R0uWdPr9NvzZDqXvB+qp9\r\n5yoeEXmgK9EMZaJHOanY+M9ReY7XvxdOMXmIxiPp4LBUumA3crxlPrAyz6+E\r\nGzdkQQSvrfQuiu1kM+7tlaQlSzdxBKJMkK+YMqprLXokrhKnOBpEITYi/Jac\r\nk7WP9baysob/p/+wBh9NenEd+ncLSx4lsasRx8vNBV9Bpj4xq1SZlkTsO486\r\nbmAbIV16c7o3tFsG1/fVDzyKo7EYDfRn9Zc4+NH1dIM5DMrFYsHENaLlA69V\r\nZcGlWJyLQeL0/u+HnntVRBt2p8ZucapkcXs=\r\n=C0nn\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "3.0.5": {
+          "name": "arc-ui",
+          "version": "3.0.5",
+          "dependencies": {
+            "react-inlinesvg": "^3.0.0"
+          },
+          "devDependencies": {
+            "@storybook/addons": "^6.4.22",
+            "@storybook/theming": "^6.4.22"
+          },
+          "dist": {
+            "integrity": "sha512-6zrdgjOv5DNM2B2o+w+ZkYVZoR7DZHruOMLaIqFsDFaeil6XVyrbJJyzggrfa8qzaHXL2LkblV6J3A2ilL84AA==",
+            "shasum": "74fb2e683a75eb2f1e2661705095e26ba901e286",
+            "tarball": "https://registry.npmjs.org/arc-ui/-/arc-ui-3.0.5.tgz",
+            "fileCount": 211,
+            "unpackedSize": 4065087,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIDIkKyPC/ryzYaehoen8GU+7V7a/u6iIi1pjqiNN8eWpAiEA7xepeMahc8GNfXDFsImUEp0j93wNYAPrptWtVNgdvyI="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJii6e+ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoYGA/9Grqo4c0ZyfuhUS+sjNHxBNUZEk69fqqi11PmdUlSxTW/+/p4\r\neGD6V3mqQOXMc3VhQZldJpeIlMOb5o+sXy9wAbdhN8aO43sJV7AxTZwvWsqd\r\navMjb1XFGtx3TW8q/Wbn9lStpDwqGae6PXYv7MSmsclEYSawrTgi/fJ5/lCE\r\nQ8fUpxOZL07klKvsPJn12gA9+0A2qR8KYLgm5uaYhTtqCL0Uyx0g+uLbAFe8\r\nU+XyuRWcq0amFqlPKlgqS8EtqZ9ejUhzd2CG9dr13hgy6p9l9y3BkXOUZ4TN\r\nxJK+8Gf++VyZua0cM/vQhKerCkvwir2w93XTM7qZsiBPjtFrp6YbAMwDwDaU\r\ndP1cr/bSoWFO0F0WLgXd0Kk/MzZhcWM1gVT9oYjOx2WMQOMboDSX3fPLxAEA\r\noSRdU/t3tmSg+ckDjiIXrDqH7XeH2qPEtCiEkj4RjO5I8NoPJFqlWViq8JDz\r\ncH1r09s7LMJko7Wv0oCAavyaSDIjzCBpVt3ssV7eNQl78xQpYmxGnKF78N9s\r\nJjyXeAvdq+44O4fmwjeQWhP+NdtctPKUH9mWgfSSp9cUkc5bqAXLzHuEci01\r\nO2FiMGp+NVsrWoodONBvA5nWb/O0bVglI79DFsMjEVTB0flkYPCUFGe3/ed/\r\nxj8GoqW7cS26tjV8LbAvJf43voDFEGeyeQ0=\r\n=j1Xj\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "3.0.6": {
+          "name": "arc-ui",
+          "version": "3.0.6",
+          "dependencies": {
+            "react-inlinesvg": "^3.0.0"
+          },
+          "devDependencies": {
+            "@storybook/addons": "^6.4.22",
+            "@storybook/theming": "^6.4.22"
+          },
+          "dist": {
+            "integrity": "sha512-yzu5JpsN8pfrYs/6StlpGY1u+PpWQqnmFJYFNJIuzZHbgLumWXULsrrmBVbS/ShTTQlMnE1HNgaAl06p6zbrvQ==",
+            "shasum": "58e9a5c3abb643c07415e4186afc05349a2bd5e1",
+            "tarball": "https://registry.npmjs.org/arc-ui/-/arc-ui-3.0.6.tgz",
+            "fileCount": 211,
+            "unpackedSize": 4065087,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQCog40oKfu7JIZ6EPBMrwoecVGM/opdFAjtCGnoAWtQiQIhAP8wMuINAFFpKIUByqzxHgjRMA9w/NLUwiAwqzn8PXPg"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJii6f2ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqMOA/+IfRXbwpTRKECqvqVg8zQXQJh3oBERyV/bACwbHUBq8lp64Q6\r\n6SIWBUaqSTZQjih1QxjtkUMPzQqGvMZC5EFVMTTqgwLLURlJLM3Gev+Gx4P5\r\nqIHNKU1YzEFTMfzPYnHyp5kReoB2ngvov3SLdYSRMdSxh4VP+FKUVzi5j2OR\r\nYtF6zP6Nn783QWFwHeZjxpeWLp/3+iQNpThON8V/yzwT8jk1YdntC7oyl+Yj\r\nuAyRBNFZ/tSont4esdDNF9dlDT7+fFEditusosATChNupMtk/MM5DhV8OwE7\r\np+iHm08DxTSOlgyKXdK2JQzYSQdCoTqEfno2WTgnriOByPrvIGrTNWHdDh4n\r\nRJyogg3hjjO6kaUR7F22EABu/RHUu0441nBJDTjIiZ5BHw7lv1bYxMWWBbCS\r\nCt+Ju7TBqmGQ+d3xX8dNUrYdMBouEgn2nqN3jGmnIk/bJGmytpYpJ7cQbHj7\r\n6n36zmNJBzhq5z8lwZ5+qxAYm8tO8JEYomiujndIWAn2gnVktBL9BKL8cO3L\r\nubrp441t+f5/+AelLTQt+R63RMb3qAt7ABQ7JMtnk3SvRO3y0xgwpvbKiXNy\r\nPyZx6dCRk0ZQ94bz7RTAkE347nKQ9H4MCKtstO0yUbK+3478ajrjGvK5FNVD\r\nbTv5se/dMk7ayLY2TUb5WtM2TQnzTsWzvvU=\r\n=LAYO\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        }
+      },
+      "modified": "2022-05-23T15:27:50.356Z",
+      "cachedAt": 1661785774728
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "No matching version found for arc-ui@^1.0.6",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION",
+      "stack": "pnpm: No matching version found for arc-ui@^1.0.6\n    at resolveNpm (/snapshot/dist/pnpm.cjs)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async Object.resolve (/snapshot/dist/pnpm.cjs)\n    at async run (/snapshot/dist/pnpm.cjs)"
+    }
+  }
+}

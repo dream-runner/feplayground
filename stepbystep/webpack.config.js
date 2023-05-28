@@ -15,13 +15,13 @@ const ESBuildPlugin = require('esbuild-webpack-plugin').default
 module.exports = {
   mode: 'production',
   // mode: 'development',
-  devtool: '#source-map',
+  devtool: 'source-map',
   devServer: {
     port: 8088,
     hot: true
   },
   entry: {
-    index: path.resolve(__dirname, './src/index.js'),
+    index: path.resolve(__dirname, './src1/index.js'),
     // index: path.resolve(__dirname, './src/index.tsx'),
     // vendors: path.resolve(__dirname, './src/moduleA.js')
   },

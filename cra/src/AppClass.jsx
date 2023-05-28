@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-export default class MobxClass extends Component {
+export default class AppClass extends Component {
   state = {}
   render () {
     return (
@@ -11,7 +11,13 @@ export default class MobxClass extends Component {
     )
   }
 }
-
+function Pu () {
+  return 'shit'
+}
+function GrandSub (props) {
+  // return props.children
+  return React.Children.map(props.children, child => React.cloneElement(child, {key: 'aaa'}))
+}
 class Sub extends Component {
   state = {
     cnt: 0
@@ -27,6 +33,9 @@ class Sub extends Component {
         <h1>
           cnt on sub: {this.state.cnt}
         </h1>
+        <GrandSub>
+          <Pu key={'pu'}/>
+        </GrandSub>
       </div>
     )
   }
