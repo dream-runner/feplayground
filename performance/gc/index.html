@@ -20,6 +20,7 @@
   <div id="tab_container">
 
   </div>
+  <button id="addM">add M</button>
   <script>
     class RootStore {
       constructor(txt) {
@@ -81,6 +82,23 @@
       btnGC.addEventListener('click', window.gc)
       sts.innerHTML = 'Noting running'
     })()
+  </script>
+  <script>
+    const registry = new FinalizationRegistry(function (heldValue) {
+      alert(heldValue)
+    })
+    let mIns
+    class M {
+      constructor () {
+        this.str = +new Date() + new Array(10 * Math.pow(1024, 2)).fill(' ').join('')
+        mIns = this
+        registry.register(this, 'destroied')
+      }
+    }
+    const addM = () => {
+      new M()
+    }
+    document.getElementById('addM').addEventListener('click', addM)
   </script>
 </body>
 </html>
